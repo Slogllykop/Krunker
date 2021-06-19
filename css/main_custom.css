@@ -1,0 +1,412 @@
+/*Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Main Variables*/
+:root {
+    --background: #02001f;
+    --accent: #ffdd00;
+    --text: var(--accent);
+    --font: Changa One, Poppins;
+    --stream: 1;
+}
+
+/*Global font*/
+* {
+    font-family: var(--font)
+}
+
+/*Links*/
+a {
+    color: var(--text);
+}
+
+/*Fuck this shit*/
+#aHolder, .endAHolder, #tlInfHold, .imageButton, #editorBtnM, #onetrust-consent-sdk, #newsHolder, .krSocial {
+    visibility: hidden;
+}
+
+#streamContainer {
+    visibility: visible;
+    opacity: var(--stream);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Section - Menu*/
+
+/*Menu left*/
+#menuItemContainer {
+    top: 80vh;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+#menuItemContainer::before {
+    content: " ";
+    position: fixed;
+    background-color: var(--background);
+    width: 260px;
+    display: block;
+    top: 500px;
+    left: -110px;
+    bottom: -20px;
+    z-index: -1;
+    box-shadow: 10px 9px var(--accent);
+    transform: skewX(4deg) skewY(18deg)
+}
+
+.menuItemTitle {
+    color: var(--text) !important;
+    padding-right: 30px;
+}    
+
+.menuItem {
+    background: transparent;
+    transition: 0.35s;
+    transform-origin: left;
+}
+
+.menuItem:hover {
+    border: none;
+    transform: scale(1.1);
+}
+
+.menuItemIcon {
+    visibility: hidden;
+}
+
+#menuBtnChall {  /*Challenge button*/
+    font-size: 25px !important;
+    transform: translateX(25px);
+}
+
+.menuItem[onclick*="showWindow(1)"] {
+    position: fixed;
+    bottom: 500px;
+    left: -90px;
+    padding: 0;
+    visibility: hidden;
+    transform: scale(1);
+    transition-duration: all 0.3s;
+}
+
+#menuBtnSettings::after {
+    font-size:40px;
+    content: "settings";
+    color: var(--accent);
+    font-family: 'Material Icons';
+    visibility: visible;
+}
+
+#clientExit[onclick*="clientExitPopup()"] {
+    display: none;
+}
+
+.menuItem[onclick*="showWindow(14)"] {
+    transform: translateX(-9px);
+}
+
+#menuBtnSocial {
+    transform: translateX(-16px);
+}
+
+#menuBtnMods {
+    transform: translateX(-7px);
+}
+
+
+/*Main Logo*/
+#gameNameHolder, #seasonLabel {
+    visibility: hidden;
+}
+
+
+/*Menu right*/
+#subLogoButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: -1%;
+    top: 75vh;
+    left: 97%;
+    font-size: 35px !important;
+    margin: 0px
+    
+}
+
+.buttonP, .buttonR, .buttonO, .buttonPI, .buttonPI {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+#faceItIconM {
+    display:none;
+}
+
+#subLogoButtons::before {
+    content: " ";
+    position: fixed;
+    background-color: var(--background);
+    width: 260px;
+    top: 00px;
+    left: -10px;
+    bottom: -40px;
+    box-shadow: -10px 9px var(--accent);
+    transform: skewX(-4deg) skewY(-18deg);
+}
+
+#subLogoButtons::after {
+    content: url(https://i.imgur.com/oLPu9th.png);
+    background-color: var(--accent);
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    border-radius: 50%;
+    left: 40%;
+    top: 7%;
+    cursor: pointer !important;
+}
+
+.button {
+    text-align: right;
+    color: var(--text);
+}
+
+.button:hover {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.button.small {
+    font-size: 30px !important;
+}
+.button.small:hover, #menuBtnHost:hover {
+    transform: scale(1.1) !important;
+    transform-origin: right;
+}
+
+
+/*Menu bottom*/
+#hiddenClasses {
+    display: flex !important;
+    flex-direction:row;
+    position:fixed;
+    left:50%;
+    bottom:-20px;
+    transform: translate(-50%,-50%);
+    margin-right: 10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_4.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_8.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker9[onclick="selectClass(9)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_9.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker9[onclick="selectClass(9)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker10[onclick="selectClass(10)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_10.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker10[onclick="selectClass(10)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_11.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_13.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker14[onclick="selectClass(14)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_14.png?build=uLz7w);    
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
+    cursor:pointer;
+}
+
