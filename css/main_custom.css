@@ -9,6 +9,7 @@
     --text: var(--accent);
     --font: Changa One, Poppins;
     --stream: 1;
+    --loadingBG: 1;
 }
 
 /*Global font*/
@@ -34,6 +35,12 @@ a {
 ::-webkit-scrollbar {
     display: none;
 }
+
+/*Loading background*/
+#loadingBg {
+    background-image:url(https://cdn.discordapp.com/attachments/778689541535957013/837250864267526194/4qoMkfx.gif);
+    opacity: var(--loadingBG);
+  }
 
 /*Section - Menu*/
 
