@@ -232,7 +232,7 @@ a:hover {
     top: -35px;
     left: -25px;
     bottom: -150px;
-    right: 545px;
+    right: 420px;
     z-index: -1;
     transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
     box-shadow: -10px 9px var(--accent);
@@ -243,13 +243,14 @@ a:hover {
     background-color: var(--accent);
     position: fixed;
     top: -35px;
-    left: 555px;
+    left: 500px;
     bottom: -150px;
     right: -15px;
     z-index: -1;
     transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
     box-shadow: 10px 9px var(--background);
 }
+  
 
 #menuClassPicker0[onclick="selectClass(0)"] {
     display:block;
