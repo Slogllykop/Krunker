@@ -43,7 +43,7 @@ a:hover {
 #streamContainer {
     visibility: visible;
     opacity: var(--stream);
-    transform: translateX(60vw) translateY(85vh);
+    transform: translateX(60vw) translateY(85vh) !important;
 }
 
 ::-webkit-scrollbar {
