@@ -609,6 +609,24 @@ a:hover {
     border-radius: 12px; 
 }
 
+#signedOutHeaderBar {
+    left: 62vw;
+    transform: scale(2) translateY(5%);
+}
+
+#signedOutHeaderBar::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--accent);
+    left: 30%;
+    top: 10%;
+    bottom: 17%;
+    right: 25%;
+    z-index: -1;
+    transform: rotate(-18deg) skewX(4deg) skewY(18deg);
+    box-shadow: -9px -11px var(--background);
+}
+
 #signedOutHeaderBar::after {
     content: " ";
     position: absolute;
