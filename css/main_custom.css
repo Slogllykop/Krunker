@@ -225,6 +225,32 @@ a:hover {
     margin-right: 10px;
 }
 
+#hiddenClasses::before {
+    content: " ";
+    background-color: var(--background);
+    position: fixed;
+    top: -35px;
+    left: -25px;
+    bottom: -150px;
+    right: 545px;
+    z-index: -1;
+    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
+    box-shadow: -10px 9px var(--accent);
+}
+  
+#hiddenClasses::after {
+    content: " ";
+    background-color: var(--accent);
+    position: fixed;
+    top: -35px;
+    left: 555px;
+    bottom: -150px;
+    right: -15px;
+    z-index: -1;
+    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    box-shadow: 10px 9px var(--background);
+}
+
 #menuClassPicker0[onclick="selectClass(0)"] {
     display:block;
     width:60px;
