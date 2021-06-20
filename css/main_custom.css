@@ -83,13 +83,13 @@ a:hover {
     padding-right: 30px;
 }    
 
-.menuItem {
+.menuItem, #menuBtnShop {
     background: transparent;
     transition: 0.35s;
     transform-origin: left;
 }
 
-.menuItem:hover {
+.menuItem:hover, #menuBtnShop:hover {
     border: none;
     transform: scale(1.1);
 }
@@ -206,6 +206,7 @@ a:hover {
 .button.small {
     font-size: 30px !important;
     text-shadow: none !important;
+    transition: 0.3s;
 }
 
 .button.small:hover, #menuBtnHost:hover {
@@ -228,11 +229,11 @@ a:hover {
 #hiddenClasses::before {
     content: " ";
     background-color: var(--background);
-    position: fixed;
+    position: absolute;
     top: -35px;
-    left: -25px;
+    left: -4%;
     bottom: -150px;
-    right: 420px;
+    right: 42%;
     z-index: -1;
     transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
     box-shadow: -10px 9px var(--accent);
@@ -241,11 +242,11 @@ a:hover {
 #hiddenClasses::after {
     content: " ";
     background-color: var(--accent);
-    position: fixed;
+    position: absolute;
     top: -35px;
-    left: 500px;
+    left: 53%;
     bottom: -150px;
-    right: -15px;
+    right: -2%;
     z-index: -1;
     transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
     box-shadow: 10px 9px var(--background);
