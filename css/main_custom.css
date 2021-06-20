@@ -529,7 +529,7 @@ a:hover {
 }
 
 #menuRegionLabel {
-    font-align: right;
+    text-align: right;
     font-size: 25px;
     color: var(--text);
     transform: translateX(-100%) translateY(70%);
@@ -608,4 +608,24 @@ a:hover {
     background: linear-gradient(to bottom left, var(--accent), var(--background));
     border-radius: 12px; 
 }
-  
+
+#signedOutHeaderBar::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);
+    left: 65%;
+    top: 10%;
+    bottom: 17%;
+    right: 1%;
+    z-index: -1;
+    transform: rotate(18.5deg) skewX(4deg) skewY(-18deg);
+    box-shadow: 9px -11px var(--accent);
+}
+
+.button {
+    text-shadow: none;
+}
+
+.button:hover {
+    transform: scale(1);
+}
