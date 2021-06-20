@@ -22,6 +22,19 @@ a {
     color: var(--text);
 }
 
+a:active {
+	color: var(--text);
+}
+
+a:visited {
+	color: var(--text);
+}
+
+a:hover {
+	color: var(--text);
+	text-decoration: none;
+}
+
 /*Fuck this shit*/
 #aHolder, .endAHolder, #tlInfHold, .imageButton, #editorBtnM, #onetrust-consent-sdk, #newsHolder, .krSocial {
     visibility: hidden;
@@ -40,7 +53,7 @@ a {
 #loadingBg {
     background-image:url(https://cdn.discordapp.com/attachments/778689541535957013/837250864267526194/4qoMkfx.gif);
     opacity: var(--loadingBG);
-  }
+}
 
 /*Section - Menu*/
 
@@ -140,13 +153,16 @@ a {
     top: 75vh;
     left: 97%;
     font-size: 35px !important;
-    margin: 0px
-    
+    margin: 0px;
 }
 
 .buttonP, .buttonR, .buttonO, .buttonPI, .buttonPI {
     background: none !important;
     box-shadow: none !important;
+}
+
+#braveWarning {
+    visibility: hidden;
 }
 
 #faceItIconM {
@@ -191,6 +207,7 @@ a {
     font-size: 30px !important;
     text-shadow: none !important;
 }
+
 .button.small:hover, #menuBtnHost:hover {
     transform: scale(1.1) !important;
     transform-origin: right;
