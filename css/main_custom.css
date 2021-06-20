@@ -463,3 +463,149 @@ a:hover {
     cursor:pointer;
 }
 
+/*Menu top*/
+#signedInHeaderBar {
+    transform: translateX(67vw) !important;
+}
+
+#signedInHeaderBar::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--accent);
+    left: -20%;
+    top: -10%;
+    bottom: -35%;
+    right: 35%;
+    z-index: -1;
+    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    box-shadow: -10px -11px var(--background);
+}
+
+#signedInHeaderBar::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);
+    left: 60%;
+    top: -10%;
+    bottom: -35%;
+    right: -30%;
+    z-index: -1;
+    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
+    box-shadow: 10px -11px var(--accent);
+}
+
+#headerRight {
+    transform: translateX(-74.5vw) translateY(130%) !important;
+    z-index: -2;
+}
+
+#headerRight::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);
+    bottom: -10%;
+    top: -175%;
+    right: -25%;
+    left: 10%; 
+    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
+    box-shadow: 10px -11px var(--accent);
+}
+
+#headerRight::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);
+    bottom: -10%;
+    top: -175%;
+    right: 50%;
+    left: -69%; 
+    z-index: -1;
+    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    box-shadow: -10px -11px var(--accent);
+}
+
+.discordSocial, .downloadClient, .redditSocial, #editorBtnM {
+    display: none !important;
+}
+
+#menuRegionLabel {
+    font-align: right;
+    font-size: 25px;
+    color: var(--text);
+    transform: translateX(-100%) translateY(70%);
+    padding-right: 20px;
+}
+
+#menuFPS {
+    color: var(--text) !important; 
+    font-size: 20px;
+}
+
+#menuFPSDisplay {
+    font-size: 20px;
+}
+
+#menuPingText {
+    color: var(--text) !important;
+    font-size: 18px;
+}
+
+.menuDebugInfo {
+    flex-direction: column;
+    align-items: start;
+    transform: scale(1.5) translateY(-30%);
+    padding-left: 20px;
+}
+
+.headerBar, #mLevelCont {
+    background: none;
+}
+
+.verticalSeparator, #menuMiniProfilePic {
+    display: none;
+}
+
+#mLevelCont {
+    color: var(--background);
+    transform: translateX(-430%);
+    font-size: 50px
+}
+
+#menuAccountUsername {
+    font-size: 35px;
+}
+
+#mailContainer{
+    transform: translateY(40%) translateX(175%);
+}
+
+#mailIcon {
+    color: var(--accent) !important;
+}
+
+.progressBar {
+    position: absolute;
+    width: 125%;
+    transform: translateY(325%) translateX(-11%);
+}
+
+.krInfo {
+    position: absolute;
+    font-size: 30px;
+    left: 90%;
+}
+
+#menuKRCount span {
+    color: var(--accent) !important;
+}
+
+#menuLevelBar {
+    border-radius: 12px;
+    background-color: var(--accent);
+}
+
+.progressBar {
+    background: linear-gradient(to bottom left, var(--accent), var(--background));
+    border-radius: 12px; 
+}
+  
