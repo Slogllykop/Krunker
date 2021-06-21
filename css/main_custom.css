@@ -60,23 +60,22 @@ a:hover {
 
 /*Menu left*/
 #menuItemContainer {
-    top: 80vh;
+    position: fixed;
+    top: calc(100% - 22em);
     font-size: 25px;
     justify-content: space-between;
 }
 
 #menuItemContainer::before {
     content: " ";
-    position: fixed;
+    position: absolute;
     background-color: var(--background);
-    width: 260px;
-    display: block;
-    top: 500px;
-    left: -110px;
-    bottom: -20px;
-    z-index: -1;
+    width: 175px;
+    height: 600px;
+    transform: skewX(4deg) skewY(18deg);
     box-shadow: 10px 9px var(--accent);
-    transform: skewX(4deg) skewY(18deg)
+    left: calc(0% - 15%);
+    z-index: -1;
 }
 
 .menuItemTitle {
