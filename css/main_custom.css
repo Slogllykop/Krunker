@@ -181,6 +181,7 @@ a:hover {
     transform: skewX(-4deg) skewY(-18deg);
 }
 
+/*
 #subLogoButtons::after {
     content: url(https://i.imgur.com/oLPu9th.png);
     background-color: var(--accent);
@@ -192,6 +193,7 @@ a:hover {
     top: -2%;
     cursor: pointer !important;
 }
+*/
 
 .buttonP, .buttonR, .buttonO, .buttonPI, .buttonPI {
     background: none !important;
