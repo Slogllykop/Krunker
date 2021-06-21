@@ -50,6 +50,18 @@ a:hover {
     display: none;
 }
 
+#clientExit {
+    display: none !important;
+}
+
+#braveWarning {
+    visibility: hidden;
+}
+
+#faceItIconM {
+    display:none;
+}
+
 /*Loading background*/
 #loadingBg {
     background-image:url(https://cdn.discordapp.com/attachments/778689541535957013/837250864267526194/4qoMkfx.gif);
@@ -148,36 +160,23 @@ a:hover {
 /*Menu right*/
 #subLogoButtons {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: space-between;
-    bottom: -1%;
-    top: 75vh;
+    bottom: -2%;
+    top: calc(100% - 16.5em);
     left: 97%;
     font-size: 35px !important;
     margin: 0px;
 }
 
-.buttonP, .buttonR, .buttonO, .buttonPI, .buttonPI {
-    background: none !important;
-    box-shadow: none !important;
-}
-
-#braveWarning {
-    visibility: hidden;
-}
-
-#faceItIconM {
-    display:none;
-}
-
 #subLogoButtons::before {
     content: " ";
-    position: fixed;
+    position: absolute;
     background-color: var(--background);
-    width: 260px;
-    top: 00px;
-    left: -10px;
-    bottom: -40px;
+    width: 175px;
+    height: 650px;
+    bottom: calc(0% - 50px);
     box-shadow: -10px 9px var(--accent);
     transform: skewX(-4deg) skewY(-18deg);
 }
@@ -192,6 +191,11 @@ a:hover {
     left: 40%;
     top: 7%;
     cursor: pointer !important;
+}
+
+.buttonP, .buttonR, .buttonO, .buttonPI, .buttonPI {
+    background: none !important;
+    box-shadow: none !important;
 }
 
 .button {
