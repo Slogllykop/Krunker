@@ -465,186 +465,177 @@ a:hover {
 }
 
 /*Menu top*/
-#signedInHeaderBar {
-    transform: translateX(67vw) !important;
+.headerBarLeft {
+    display: flex;
+    position: fixed;
+    top: unset;
+    left: 50vw;
+    right: 50vw;
+    background: none;
+    justify-content: center;
 }
 
-#signedInHeaderBar::before {
+.headerBarLeft:before {
     content: " ";
     position: absolute;
     background-color: var(--accent);
-    left: -20%;
-    top: -10%;
-    bottom: -35%;
-    right: 35%;
-    z-index: -1;
-    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    width: 390px;
+    height: 100px;
+    left: 2em;
+    z-index: -2;
+    transform: rotate(-17.8deg) skewX(4deg) skewY(18deg);
     box-shadow: -10px -11px var(--background);
 }
 
-#signedInHeaderBar::after {
+.headerBarLeft:after {
     content: " ";
     position: absolute;
     background-color: var(--background);
-    left: 60%;
-    top: -10%;
-    bottom: -35%;
-    right: -30%;
-    z-index: -1;
+    width: 310px;
+    height: 100px;
+    right: 4em;
     transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
     box-shadow: 10px -11px var(--accent);
-}
-
-#headerRight {
-    transform: translateX(-74.5vw) translateY(130%) !important;
-    z-index: -2;
-}
-
-#headerRight::before {
-    content: " ";
-    position: absolute;
-    background-color: var(--background);
-    bottom: -10%;
-    top: -175%;
-    right: -25%;
-    left: 10%; 
-    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
-    box-shadow: 10px -11px var(--accent);
-}
-
-#headerRight::after {
-    content: " ";
-    position: absolute;
-    background-color: var(--background);
-    bottom: -10%;
-    top: -175%;
-    right: 50%;
-    left: -69%; 
     z-index: -1;
-    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
-    box-shadow: -10px -11px var(--accent);
 }
 
-.discordSocial, .downloadClient, .redditSocial, #editorBtnM {
-    display: none !important;
+#gameNameHolder, #seasonLabel {
+      visibility: hidden;
 }
 
-#menuRegionLabel {
-    text-align: right;
+.headerBarLeft {
     font-size: 25px;
-    color: var(--text);
-    transform: translateX(-100%) translateY(70%);
-    padding-right: 20px;
 }
 
-#menuFPS {
-    color: var(--text) !important; 
-    font-size: 20px;
+#menuMiniProfilePic {
+    display: none
 }
-
-#menuFPSDisplay {
-    font-size: 20px;
-}
-
-#menuPingText {
-    color: var(--text) !important;
-    font-size: 18px;
-}
-
-.menuDebugInfo {
-    flex-direction: column;
-    align-items: start;
-    transform: scale(1.5) translateY(-30%);
-    padding-left: 20px;
-}
-
-.headerBar, #mLevelCont {
-    background: none;
-}
-
-.verticalSeparator, #menuMiniProfilePic {
-    display: none;
+  
+#menuLvlHold {
+    width: calc(100% - 250px);
 }
 
 #mLevelCont {
-    color: var(--background);
-    transform: translateX(-430%);
-    font-size: 50px
+    transform: translateX(calc(50vw - 32.5em));
+    font-size: 45px;
+    color: var(--background) !important;
+    background: none;
+}
+
+#signedInHeaderBar {
+    transform: translateX(20px);
+}
+
+#signedOutHeaderBar {
+    transform: translateX(20px);
 }
 
 #menuAccountUsername {
-    font-size: 35px;
+    color: var(--background);
+    padding-right: 50px
 }
 
-#mailContainer{
-    transform: translateY(40%) translateX(175%);
+.krSocial {
+    display: none;
 }
 
-#mailIcon {
-    color: var(--accent) !important;
-}
-
-.progressBar {
-    position: absolute;
-    width: 125%;
-    transform: translateY(325%) translateX(-11%);
-}
-
-.krInfo {
-    position: absolute;
-    font-size: 30px;
-    left: 90%;
+.verticalSeparator {
+    visibility: hidden;
 }
 
 #menuKRCount span {
     color: var(--accent) !important;
 }
 
-#menuLevelBar {
-    border-radius: 12px;
+#menuKRCount {
+    color: white;
+}
+
+#mailIcon {
+    color: var(--accent) !important;
+}
+
+.progressBarInner {
     background-color: var(--accent);
+    border-radius: 12px;
 }
 
 .progressBar {
-    background: linear-gradient(to bottom left, var(--accent), var(--background));
-    border-radius: 12px; 
+    border-radius: 12px;
+    background: linear-gradient(to top left, var(--accent), var(--background));
 }
 
-#signedOutHeaderBar {
-    left: 62vw;
-    transform: scale(2) translateY(5%);
+.discordSocial, .downloadClient, .redditSocial, #editorBtnM {
+      display: none !important;
 }
-
-#signedOutHeaderBar::before {
-    content: " ";
-    position: absolute;
-    background-color: var(--accent);
-    left: 30%;
-    top: 10%;
-    bottom: 17%;
-    right: 25%;
+  
+.headerBarRight {
+    display: flex;
+    position: fixed;
+    top: calc(0% + 80px);
+    left: 50vw;
+    right: 50vw;
+    background: none;
+    justify-content: center;
     z-index: -1;
-    transform: rotate(-18deg) skewX(4deg) skewY(18deg);
-    box-shadow: -9px -11px var(--background);
 }
 
-#signedOutHeaderBar::after {
+.headerBarRight::before {
     content: " ";
     position: absolute;
     background-color: var(--background);
-    left: 65%;
-    top: 10%;
-    bottom: 17%;
-    right: 1%;
+    width: 150px;
+    height: 250px;
+    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    box-shadow: -10px -11px var(--accent);
+    left: 33%;
+    bottom: -20%;
     z-index: -1;
-    transform: rotate(18.5deg) skewX(4deg) skewY(-18deg);
-    box-shadow: 9px -11px var(--accent);
 }
 
-.button {
+.headerBarRight::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);;
+    width: 150px;
+    height: 250px;
+    bottom: -20%;
+    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
+    box-shadow: 10px -11px var(--accent);
+    right: 33%;
+    z-index: -1;
+}
+
+#menuServerInfoContainer {
+    align-items: center;
+}
+
+#menuRegionLabel {
+    font-size: 25px;
+    color: var(--accent);
+}
+
+#menuPingDisplay, #menuFPSDisplay {
+    font-size: 25px
+}
+
+#menuPingDisplay {
+    transform: scale(1.5) translateY(-4px);
+    padding-left: 10px;
+}
+
+#menuPingText {
+    font-size: 17px;
+    color: var(--text)
+}
+
+#menuFPS {
+    color: var(--text) !important;
+}
+
+.button.buttonP.lgn {
+    background: none !important;
+    box-shadow: none !important;
     text-shadow: none;
-}
-
-.button:hover {
-    transform: scale(1);
+    transform: scale(1.5) translateY(5px);
 }
