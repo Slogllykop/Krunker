@@ -164,7 +164,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     bottom: -2%;
-    top: calc(100% - 16.5em);
+    top: calc(100% - 15.5em);
     left: 97%;
     font-size: 35px !important;
     margin: 0px;
@@ -176,7 +176,7 @@ a:hover {
     background-color: var(--background);
     width: 175px;
     height: 650px;
-    bottom: calc(0% - 50px);
+    bottom: -10%;
     box-shadow: -10px 9px var(--accent);
     transform: skewX(-4deg) skewY(-18deg);
 }
@@ -189,7 +189,7 @@ a:hover {
     position: absolute;
     border-radius: 50%;
     left: 40%;
-    top: 7%;
+    top: unset;
     cursor: pointer !important;
 }
 
