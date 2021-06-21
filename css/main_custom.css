@@ -637,5 +637,5 @@ a:hover {
     background: none !important;
     box-shadow: none !important;
     text-shadow: none;
-    transform: scale(1.5) translateY(5px);
+    transform: scale(1.5) translateX(-20%) translateY(5px);
 }
