@@ -186,7 +186,7 @@ a:hover {
     background-color: var(--accent);
     width: 75px;
     height: 75px;
-    position: fixed;
+    position: absolute;
     border-radius: 50%;
     left: 40%;
     top: 7%;
