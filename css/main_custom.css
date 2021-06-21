@@ -62,6 +62,7 @@ a:hover {
 #menuItemContainer {
     position: fixed;
     top: calc(100% - 22em);
+    bottom: 0px;
     font-size: 25px;
     justify-content: space-between;
 }
