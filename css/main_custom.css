@@ -677,5 +677,5 @@ a:hover {
 }
 
 #bubbleContainer {
-    display: none;
+    display: none !important;
 }
