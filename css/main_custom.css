@@ -10,6 +10,7 @@
     --font: Changa One, Poppins;
     --stream: 1;
     --loadingBG: 1;
+    --chat-msg: white;
 }
 
 /*Global font*/
@@ -60,6 +61,10 @@ a:hover {
 
 #faceItIconM {
     display:none;
+}
+
+#voiceDisplay {
+    display: none;
 }
 
 /*Loading background*/
@@ -678,4 +683,69 @@ a:hover {
 
 #bubbleContainer {
     display: none !important;
+}
+
+/*Menu chat*/
+#uiBase.onMenu #chatHolder {
+    left: 0px;
+    right: unset;
+    top: 20px;
+    bottom: unset !important;
+}
+
+#chatList {
+    background-color: transparent;
+}
+
+#uiBase.onMenu #chatList {
+    text-align: left;
+}
+
+.chatTextOutline {
+    text-shadow: none;
+}
+
+.chatItem {
+    background-color: var(--background) !important;
+    color: var(--text);
+    font-size: 20px;
+    border-radius: 0px;
+    padding: 10px 16px;
+    margin-left: 10;
+    max-width: 280px;
+    box-shadow: 6px 6px var(--accent);
+    transform: skew(-15deg);
+}
+
+.chatMsg {
+    transform: skew(15deg) !important;
+    color: var(--chat-msg);
+}
+
+.chatMsg span[style*="#fff"], .chatMsg span[style*="#9eeb56"], .chatMsg[style="color:#fc03ec"]  {
+    color: var(--text) !important;
+}
+
+#chatInputHolder {
+    background: var(--background);
+    border: none;
+    transform: skew(-15deg);
+    box-shadow: 6px 6px var(--accent);
+    margin-left: 10px;
+}
+
+#chatInput::placeholder {
+    color: var(--text);
+}
+
+#chatSwitch {
+    color: var(--accent);
+}
+
+#chatInput {
+    color: var(--chat-msg);
+    background-color: var(--background);
+    border-bottom: 3px solid var(--accent);
+    border-radius: 0px;
+    font-size: 20px;
 }
