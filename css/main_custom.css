@@ -589,6 +589,7 @@ a:hover {
     transform: skew(18deg);
     box-shadow: -10px -11px var(--accent);
     margin-right: 10%;
+    z-index: -1;
 }
   
 .headerBarRight::after {
@@ -602,6 +603,7 @@ a:hover {
     transform: skew(-18deg);
     box-shadow: 10px -11px var(--accent);
     margin-left: 10%;
+    z-index: -1;
 }
 
 #menuServerInfoContainer {
