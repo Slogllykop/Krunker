@@ -96,6 +96,11 @@ a:hover {
     z-index: -1;
 }
 
+.menuItem {
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
 .menuItemTitle {
     color: var(--text) !important;
     padding-right: 30px;
@@ -118,13 +123,12 @@ a:hover {
 
 #menuBtnChall {  /*Challenge button*/
     font-size: 25px !important;
-    transform: translateX(25px);
 }
 
 .menuItem[onclick*="showWindow(1)"] {
     position: fixed;
     bottom: 500px;
-    left: -90px;
+    left: -100px;
     padding: 0;
     visibility: hidden;
     transform: scale(1);
@@ -141,18 +145,6 @@ a:hover {
 
 #clientExit[onclick*="clientExitPopup()"] {
     display: none;
-}
-
-.menuItem[onclick*="showWindow(14)"] {
-    transform: translateX(-9px);
-}
-
-#menuBtnSocial {
-    transform: translateX(-16px);
-}
-
-#menuBtnMods {
-    transform: translateX(-7px);
 }
 
 
