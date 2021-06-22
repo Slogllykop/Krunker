@@ -234,12 +234,12 @@ a:hover {
     content: " ";
     background-color: var(--background);
     position: absolute;
-    top: -35px;
-    left: -4%;
-    bottom: -150px;
-    right: 42%;
+    width: 75%;
+    height: 175%;
+    bottom: -25%;
     z-index: -1;
-    transform: rotate(17.8deg) skewX(-4deg) skewY(-18deg);
+    left: -2%;
+    transform: skew(-18deg);
     box-shadow: -10px 9px var(--accent);
 }
   
@@ -247,12 +247,12 @@ a:hover {
     content: " ";
     background-color: var(--accent);
     position: absolute;
-    top: -35px;
-    left: 53%;
-    bottom: -150px;
-    right: -2%;
+    width: 50%;
+    height: 175%;
+    bottom: -25%;
+    margin-left: 50%;
     z-index: -1;
-    transform: rotate(-17.5deg) skewX(4deg) skewY(18deg);
+    transform: skew(18deg);
     box-shadow: 10px 9px var(--background);
 }
   
@@ -580,30 +580,28 @@ a:hover {
     z-index: -1;
 }
 
-#hiddenClasses::before {
+.headerBarRight::before  {
     content: " ";
-    background-color: var(--background);
     position: absolute;
-    width: 75%;
-    height: 175%;
-    bottom: -25%;
-    z-index: -1;
-    left: -2%;
-    transform: skew(-18deg);
-    box-shadow: -10px 9px var(--accent);
+    background-color: var(--background);
+    width: 15%;
+    height: 140%;
+    transform: skew(18deg);
+    box-shadow: -10px -11px var(--accent);
+    margin-right: 10%;
 }
   
-#hiddenClasses::after {
+.headerBarRight::after {
     content: " ";
     background-color: var(--accent);
     position: absolute;
-    width: 50%;
-    height: 175%;
-    bottom: -25%;
-    margin-left: 50%;
-    z-index: -1;
-    transform: skew(18deg);
-    box-shadow: 10px 9px var(--background);
+    background-color: var(--background);;
+    width: 15%;
+    height: 140%;
+    bottom: -20%;
+    transform: skew(-18deg);
+    box-shadow: 10px -11px var(--accent);
+    margin-left: 10%;
 }
 
 #menuServerInfoContainer {
