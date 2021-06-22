@@ -658,7 +658,6 @@ a:hover {
 }
 
 #customizeButton {
-    background: noe !important;
     box-shadow: none !important;
     opacity: 0;
     position: absolute;
