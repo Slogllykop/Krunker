@@ -658,7 +658,7 @@ a:hover {
     opacity: 0;
     position: absolute;
     right: 215px;
-    bottom: 640px;
+    bottom: calc(50% - 250px);
     width: 250px;
     height: 320px;
 }
