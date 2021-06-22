@@ -247,7 +247,7 @@ a:hover {
     bottom: -150px;
     right: 42%;
     z-index: -1;
-    transform: rotate(17.5deg) skewX(-4deg) skewY(-18deg);
+    transform: rotate(17.8deg) skewX(-4deg) skewY(-18deg);
     box-shadow: -10px 9px var(--accent);
 }
   
@@ -759,4 +759,72 @@ a:hover {
     border-bottom: 3px solid var(--accent);
     border-radius: 0px;
     font-size: 20px;
+}
+
+/*Menu map and mod holder*/
+#mapInfoHolder {
+    align-items: center;
+    right: calc(50% - 225px);
+    transform: translateY(-90px);
+    z-index: 1;
+}
+
+#mapInfoHolder::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--accent);
+    width: 70%;
+    margin-right: 30%;
+    height: 210px;
+    transform: skew(-18deg);
+    box-shadow: -10px 9px var(--background);
+    z-index: -2;    
+}
+
+#mapInfoHolder::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--accent);
+    width: 70%;
+    margin-left: 40%;
+    height: 210px;
+    transform: skew(18deg);
+    box-shadow: 10px 9px var(--background);
+    z-index: -1;
+}
+
+.verticalSeparatorInline {
+    opacity: 0;
+}
+
+#termsInfo {
+    background: none;
+}
+
+.terms {
+    font-size: 25px;
+    color: var(--background);
+}
+
+#mapInfo {
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+
+#modVote {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: -2px;
+    padding-top: 10px;
+    color: var(--background);
+}
+
+.voteHint.vHR {
+    display: none;
+}
+
+#modVoteD, #modVoteU {
+    font-size: 30px;
+    color: var(--background);
 }
