@@ -675,3 +675,7 @@ a:hover {
 #menuClassNameTag {
     opacity: 0;
 }
+
+#bubbleContainer {
+    display: none;
+}
