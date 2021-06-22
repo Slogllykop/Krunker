@@ -646,3 +646,32 @@ a:hover {
     text-shadow: none;
     transform: scale(1.5) translateX(calc(0% - 3em)) translateY(5px) !important;
 }
+
+/*Menu Character preview*/
+#policeButton {
+    display: none;
+}
+
+#customizeButton {
+    background: noe !important;
+    box-shadow: none !important;
+    opacity: 0;
+    position: fixed;
+    right: 215px;
+    bottom: 640px;
+    width: 250px;
+    height: 320px
+}
+
+#menuClassName, #menuClassSubtext {
+    display: none;
+}
+  
+#menuClassContainer {
+    right: -240px;
+    top: -77%;
+}
+
+#menuClassNameTag {
+    opacity: 0;
+}
