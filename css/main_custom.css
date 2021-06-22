@@ -677,6 +677,18 @@ a:hover {
     top: -77%;
 }
 
+#menuClassContainer::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--background);
+    margin-right: calc(20% - 110px);;
+    width: 260px;
+    height: 500px;
+    transform: skew(4deg, 10deg);
+    box-shadow: -10px 10px var(--accent);
+    z-index: -1;
+}
+
 #menuClassNameTag {
     opacity: 0;
 }
