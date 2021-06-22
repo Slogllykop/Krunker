@@ -800,11 +800,15 @@ a:hover {
 
 #termsInfo {
     background: none;
+    display: flex;
+    align-items: flex-end;
 }
 
 .terms {
     font-size: 25px;
     color: var(--background);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #mapInfo {
