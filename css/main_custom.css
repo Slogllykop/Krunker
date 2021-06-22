@@ -764,7 +764,8 @@ a:hover {
 /*Menu map and mod holder*/
 #mapInfoHolder {
     align-items: center;
-    right: 67vw;
+    right: 50vw;
+    left: 50vw;
     transform: translateY(-90px);
     z-index: 1;
 }
