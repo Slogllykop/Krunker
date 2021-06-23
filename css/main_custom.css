@@ -77,6 +77,21 @@ a:hover {
     opacity: var(--loadingBG);
 }
 
+/*Menu tint*/
+#instructionHolder {
+    z-index: -1;
+}
+
+#instructionHolder::before {
+    content: " ";
+    position: absolute;
+    background-color: var(--accent) !important;
+    opacity: 0.25;
+    width: 200%;
+    height: 100%;
+    right: -100%;
+}
+
 /*Section - Menu*/
 
 /*Menu left*/
@@ -482,7 +497,7 @@ a:hover {
     justify-content: center;
 }
 
-.headerBarLeft:before {
+.headerBarLeft::before {
     content: " ";
     position: absolute;
     background-color: var(--accent);
@@ -494,7 +509,7 @@ a:hover {
     box-shadow: -10px -11px var(--background);
 }
 
-.headerBarLeft:after {
+.headerBarLeft::after {
     content: " ";
     position: absolute;
     background-color: var(--background);
