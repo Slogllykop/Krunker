@@ -880,3 +880,178 @@ input:checked+.sliderSml {
     font-size: 30px;
     color: var(--background);
 }
+
+/*Settings*/
+#windowHolder {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+#menuWindow {
+    max-height: 100% !important;
+    width: calc(100% - 700px) !important;
+    border-radius: 0px !important;
+    top: 10px !important;
+    bottom: 10px;
+    left: 15%;
+    right: 15%;
+    transform: unset !important;
+}
+
+#menuWindow.dark {
+    background: none;
+    box-shadow: none;
+}
+
+#menuWindow.dark::before {
+    content: " ";
+    position: fixed;
+    left: 13%;
+    background-color: var(--background);
+    width: calc(100% - 600px);
+    height: 98%;
+    z-index: -2;
+    transform: skew(-3deg);
+    box-shadow: -20px 20px var(--accent);
+    border-right: 10px dashed var(--accent);
+}
+
+.settingsHeader {
+    background-color: var(--accent);
+    transform: skew(-3deg);
+    padding-right: 15px;
+}
+
+#menuWindow::-webkit-scrollbar {
+    display: none !important;
+}
+
+.settingTab {
+    background-color: var(--background);
+    color: var(--text) !important;
+    font-size: 25px !important;
+}
+
+.dark .tabANew, .dark .tabANew:hover, .settingTab:hover {
+    border-bottom: 5px solid var(--accent) !important;
+}
+
+.settingsBtn {
+    background-color: var(--background);
+    font-size: 20px;
+    border-radius: 0px !important;
+    color: var(--text) !important;
+}
+
+.inputGrey2 {
+    background-color: var(--background);
+    border-radius: 0px !important;
+    color: var(--text);
+}
+
+#settingsPreset option, .settName option {
+    color: var(--text) !important;
+}
+
+#settSearch {
+    border-radius: 0px !important;
+    background: transparent;
+    border-bottom: 3px solid var(--background);
+    font-size: 20px;
+    color: var(--background);
+}
+
+.settingsBtn[onclick*="uploadSettings()"], .settingsBtn[onclick*="fetchSettings()"] {
+    background-color: transparent;
+}
+
+#settSearch::placeholder {
+    color: var(--background);
+}
+
+#menuWindow.dark div {
+    color: var(--text);
+}
+
+.plusOrMinus {
+    color: var(--text) !important;
+}
+
+.setBodH, .setHed {
+    background: none;
+    border: none;
+    font-size: 40px;
+}
+
+.setHed:hover {
+    background: none;
+}
+
+.settName, .settNameSmall {
+    color: var(--chat-msg) !important;
+    border-bottom: 0.1px solid var(--accent) !important;
+    font-size: 25px
+}
+
+#requiresRestart, #requiresRestart span {
+    color: var(--text) !important;
+}
+
+.sliderM {
+    background-color: var(--accent);
+    border-radius: 0px;
+    height: 4px;
+}
+
+.sliderM::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.sliderVal {
+    border-radius: 0px;
+    border: none !important;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent) !important;
+    color: var(--text);
+    margin-top: 0px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "OFF";
+    line-height: 22px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: transparent !important;
+    font-size: 23px;
+}
+
+input:checked+.slider:before {
+    transform: unset;
+    content: "ON";
+    font-size: 30px;
+    color: var(--text);
+    overflow: hidden;
+}
+
+input:checked+.slider, .slider {
+    background-color: transparent;
+}
+
+input[type=color] {
+    border-radius: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--accent);
+    transform: translate(-15px, -3px) skew(-10deg);
+}
+
+.settName span {
+    color: var(--accent) !important;
+}
