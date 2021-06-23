@@ -660,6 +660,45 @@ a:hover {
     transform: scale(1.5) translateX(calc(0% - 3em)) translateY(5px) !important;
 }
 
+/*Spectate*/
+#uiBase.onMenu #spectButton {
+    bottom: unset;
+    top: 17%;
+}
+
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+    display: none;
+}
+
+#spectButton .switchsml {
+    margin-right: 10px;
+}
+
+.sliderSml::before {
+    content: "visibility_off";
+    font-size: 32px;
+    color: white;
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    transition-duration: 0.25s;
+    font-family: 'Material Icons';
+}
+
+input:checked+.sliderSml::before {
+    content: "visibility";
+    transform: unset;
+}
+
+input:checked+.sliderSml {
+    background-color: transparent !important;
+}
+
+.sliderSml {
+    background-color: transparent;
+}
+
 /*Menu Character preview*/
 #policeButton {
     display: none;
