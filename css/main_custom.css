@@ -264,7 +264,7 @@ a:hover {
     bottom: -25%;
     z-index: -1;
     left: -2%;
-    transform: skew(-18deg);
+    transform: skew(-18deg) translateY(1px);
     box-shadow: -10px 9px var(--accent);
 }
   
