@@ -913,6 +913,7 @@ input:checked+.sliderSml {
     transform: skew(-3deg);
     box-shadow: -20px 20px var(--accent);
     border-right: 10px dashed var(--accent);
+    bottom: 15px;
 }
 
 .settingsHeader {
