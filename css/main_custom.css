@@ -5,7 +5,7 @@
 /*Main Variables*/
 :root {
     --background: #02001f;
-    --accent: #ffdd00;
+    --accent: #dc143c;
     --text: var(--accent);
     --font: Changa One, Poppins;
     --stream: 1;
