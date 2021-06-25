@@ -162,6 +162,11 @@ a:hover {
     visibility: visible;
 }
 
+#menuBtnSettings:hover::after {
+    font-size: 45px;
+    transition-duration: 0.4s;
+}
+
 #clientExit[onclick*="clientExitPopup()"] {
     display: none;
 }
