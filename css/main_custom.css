@@ -260,7 +260,7 @@ a:hover {
     background-color: var(--background);
     position: absolute;
     width: 75%;
-    height: 175%;
+    height: 174%;
     bottom: -25%;
     z-index: -1;
     left: -2%;
