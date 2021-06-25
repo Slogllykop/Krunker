@@ -160,6 +160,7 @@ a:hover {
     color: var(--accent);
     font-family: 'Material Icons';
     visibility: visible;
+    transition-duration: 0.4s;
 }
 
 #menuBtnSettings:hover::after {
