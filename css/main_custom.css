@@ -852,7 +852,7 @@ input:checked+.sliderSml {
 }
 
 .terms {
-    font-size: 25px;
+    font-size: 25px !important;
     color: var(--background);
     margin-left: 10px;
     margin-right: 10px;
