@@ -1091,3 +1091,115 @@ input[type=color] {
 .setToggle option {
     background-color: var(--background);
 }
+
+/*Profile*/
+.bigMenTabs {
+    background-color: var(--accent);
+    transform: skew(-3deg);
+    border-radius: 0px;
+}
+
+.bigMenTabA, .bigMenTab:hover {
+    color: var(--background) !important;
+    border-bottom: 5px solid var(--background)
+}
+
+.bigMenTab {
+    color: var(--background) !important;
+    font-size: 30px;
+}
+
+.setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:680px;margin-left:15px;margin-top:0px;"] {
+    width: calc(100% - 270px) !important;
+}
+
+.floatR {
+    color: var(--text);
+}
+
+#profilePicM {
+    background-color: transparent !important;
+    border-radius: 0px;
+}
+
+.xpBar {
+    background-color: transparent;
+    transform: skew(-4deg);
+    border: 5px solid var(--accent);
+}
+
+.xpBarB {
+    background-color: var(--accent);
+}
+
+.xpBarV {
+    color: var(--chat-msg);
+    font-size: 1.1em;
+}
+
+div[style="height:15px;margin-top:30px;border-top:4px solid rgba(255, 255, 255, 0.8);"] {
+    border-top: 4px solid var(--accent) !important;
+}
+
+.setHedS {
+    background: none;
+    border: none;
+    font-size: 30px;
+}
+
+div[style="font-size:21px;color:rgba(255,255,255,0.4);margin-top:5px;"] {
+    color: var(--text) !important;
+}
+
+div[style="font-size:21px;color:rgba(255,255,255,0.4);margin-top:5px"] {
+    color: var(--chat-msg) !important;
+}
+
+.smlInput {
+    background: none;
+    border-radius: 0px;
+    border-bottom: 3px solid var(--accent);
+    color: var(--text);
+    text-align: left;
+}
+
+.smlInput::placeholder {
+    color: var(--text);
+}
+
+.subPassChg {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    transform: skew(-4deg);
+    border-radius: 0px;
+}
+
+.subPassChg:hover {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    transform: skew(-4deg);
+    border-radius: 0px;
+}
+
+#newPRes {
+    color: var(--chat-msg) !important;
+}
+
+.lnkTw {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    border-radius: 0px;
+    transform: skew(-3deg);
+}
+
+.lnkTw:hover {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    border-radius: 0px;
+    transform: skew(-3deg);
+}
+
+/*DC Fix*/
+#endUI {
+    z-index: -1;
+}
