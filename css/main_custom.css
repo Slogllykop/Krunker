@@ -1203,3 +1203,110 @@ div[style="font-size:21px;color:rgba(255,255,255,0.4);margin-top:5px"] {
 #endUI {
     z-index: -1;
 }
+
+/*Host menu*/
+.serverHostOpH {
+    font-size: 50px;
+    color: var(--background) !important;
+    background-color: var(--accent);
+    padding: 10px;
+    transform: skew(-4deg);
+}
+
+.serverHostOp {
+    border-radius: 0px;
+    border: none;
+    transform: skew(-3deg);
+    box-shadow: -10px 10px var(--accent);
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 400px;
+    height: 400px;
+    background-size: auto 400px;
+    line-height: 400px;
+}
+
+.hostHeader {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    border: none;
+    font-size: 40px;
+    transform: skew(-3deg);
+}
+
+#rawMapData {
+    background: none;
+    border-bottom: 3px solid var(--accent);
+    border-radius: 0px;
+    color: var(--text);
+    transform: skew(-4deg);
+}
+
+#rawMapData::placeholder {
+    color: var(--text);
+}
+
+.hostMap {
+    box-shadow: -6px 7px var(--accent);
+    transform: skew(-4deg);
+    border: none;
+    border-radius: 0px;
+    margin: 15px;
+}
+
+.hostMapName, .hostMapYear, .hostMapVersion, .hostMapBy {
+    font-size: 16px;
+    color: var(--text) !important;
+    opacity: 1;
+}
+
+.hostToggle, .hostToggle:hover {
+    background-color: var(--accent);
+    color: var(--background) !important;
+    border-radius: 0px;
+    transform: skew(-4deg);
+}
+
+.hostOpt {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    padding: 10px;
+    transform: skew(-4deg);
+    text-align: center;
+    border: 3px solid var(--accent);
+    box-shadow: -7px 7px var(--accent);
+    margin: 10px;
+}
+
+.optCheck:hover {
+    background-color: var(--accent) !important;
+    opacity: 0.2;
+}
+
+.optName {
+    font-size: 20px;
+    color: var(--text);
+    text-shadow: none;
+}
+
+input:checked+.optCheck {
+    background-color: var(--accent);
+    opacity: 0.2;
+}
+
+.optCheck {
+    background: none;
+}
+
+.optImg {
+    display: none;
+}
+
+.advancedToggle {
+    background-color: var(--accent);
+    border-radius: 0px;
+    color: var(--background) !important;
+    font-size: 20px;
+    transform: skew(-4deg);
+}
