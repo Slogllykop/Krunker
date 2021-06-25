@@ -1081,3 +1081,13 @@ input[type=color] {
 .settName input[type=text]::placeholder, input[type=url]::placeholder, input[type=input]::placeholder {
     color: var(--text);
 }
+
+/*Keybinds*/
+.setToggle {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.setToggle option {
+    background-color: var(--background);
+}
