@@ -1310,3 +1310,85 @@ input:checked+.optCheck {
     font-size: 20px;
     transform: skew(-4deg);
 }
+
+#presetName {
+    font-size: 20px;
+    background-color: transparent !important;
+    text-align: center;
+    color: var(--text);
+    border-bottom: 3px solid var(--accent) !important;
+    border-radius: 0px !important;
+}
+
+#presetName::placeholder {
+    color: var(--text);
+}
+
+#presetSelect {
+    font-size: 15px;
+    border-radius: 0px !important;
+    background-color: var(--accent) !important;
+    color: var(--background);
+    transform: skew(-4deg);
+}
+
+#presetSelect option {
+    color: var(--background);
+}
+
+#passCode {
+    border-radius: 0px !important;
+    text-align: center;
+    background-color: transparent !important;
+    color: var(--text);
+    font-size: 20px;
+    border-bottom: 3px solid var(--accent) !important;
+}
+
+#passCode::placeholder {
+    color: var(--text);
+}
+
+.settNameSmall span[style="float:right;margin-right:10px;color:rgba(255,255,255,0.5)"] {
+    color: var(--text) !important;
+    margin-top: 5px;
+}
+
+.settNameSmall span[style="float:right;margin-right:10px;color:rgba(255,255,255,0.5)"] b {
+    color: white !important;
+}
+
+.hostPresetBtn {
+    border-radius: 0px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+    font-size: 20px;
+    transform: skew(-4deg);
+}
+
+#hostActionH {
+    border-top: 3px solid var(--accent);
+}
+
+#hostActionH div[style="color:rgba(255,255,255,0.3);font-size:22px"] {
+    color: var(--text) !important;
+}
+
+#hCustCost {
+    color: var(--text) !important;
+}
+#hostGameMsg {
+    color: var(--text) !important;
+}
+
+.hostCBtn {
+    background-color: var(--accent);
+    border: none;
+    border-radius: 0px;
+    color: var(--background) !important;
+    transform: skew(-4deg);
+}
+
+.hostCBtn:hover {
+    transform: skew(-4deg);
+}
