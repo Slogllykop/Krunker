@@ -1580,3 +1580,70 @@ input:checked+.slider2 {
 .setBodH b[style="font-size:26px;color:rgba(255,255,255,0.8)"], .setBodH b[style="font-size:26px;color:rgba(255,255,255,0.8)"] span {
     color: var(--text) !important;
 }
+
+/*Ranked*/
+.bigMFeatHold {
+    transform: skew(-4deg);
+}
+
+#cmpGongBtn, #cmpGongBtn:hover {
+    transform: translateY(-170%);
+}
+
+#bigMFeatName, #bigMFeatDesc, #bigMFeatHBtnD  {
+    transform: translateY(-200%);
+}
+
+#bigMFeatBar {
+    transform: translateY(-150%);
+}
+
+#rankedSeasIcn {
+    transform: translateY(-65%);
+}
+
+.bigMFeatBox {
+    transform: skew(-4deg);
+    line-height: 150px;
+    box-shadow: -7px 7px var(--accent);
+    border-radius: 0px;
+}
+
+.esprtsNewsI {
+    font-size: 25px;
+}
+
+.longMFeatBox {
+    background-color: transparent;
+}
+
+img[src="./img/backgrounds/leak_0.png"], img[src="./img/lore/dragon_0.png"] {
+    transform: skew(-4deg);
+    box-shadow: -10px 10px var(--accent);
+}
+
+.esprtsNewsI {
+    color: var(--accent) !important;
+    border-bottom: 3px solid var(--accent);
+}
+
+#bigMFeatHBtnD, #bigMFeatHBtnD:hover {
+    background-color: var(--background);
+    border-radius: 0px;
+    border: unset;
+    padding: 10px;
+    box-shadow: -7px 7px var(--accent);
+    color: var(--accent) !important;
+}
+
+#bigMFeatHBtnD span {
+    color: var(--accent) !Important;
+}
+
+#bigMFeatDesc {
+    color: var(--chat-msg) !important;
+}
+
+.bigMenTab span[style="font-size:42px;color:#fbc02d;vertical-align:middle;margin-top:-10px;"] {
+    color: var(--background) !important;
+}
