@@ -1464,7 +1464,6 @@ input:checked+.optCheck {
 .serverHeader {
     background-color: var(--accent);
     transform: skew(-4deg);
-  
 }
 
 .serverHeader .setBodH div a  {
@@ -1546,6 +1545,7 @@ input:checked+.slider2 {
 #carousel-infinite {
     transform: skew(-4deg);
     box-shadow: -10px 10px var(--accent);
+    height: 160px;
 }
 
 .slide {
