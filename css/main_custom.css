@@ -1542,3 +1542,41 @@ input:checked+.slider2 {
 #hostMenuBtn:hover {
     transform: unset;
 }
+
+#carousel-infinite {
+    transform: skew(-4deg);
+    box-shadow: -10px 10px var(--accent);
+}
+
+.slide {
+    border: 10px solid var(--accent); 
+    margin-right: 10px;
+}
+
+.purejscarousel-btn {
+    color: var(--accent) !important;
+    background-color: var(--background) !important;
+    opacity: 1;
+    border: 5px solid var(--accent);
+}
+
+.purejscarousel-btn span {
+    color: var(--accent);
+}
+
+.quickJoin, .quickJoin:hover {
+    font-size: 20px;
+    border-radius: 0px;
+    transform: skew(-4deg);
+    background-color: var(--accent);
+    color: var(--background) !important;
+    margin-top: 5px;
+}
+
+#serverHolder .setHed span[style="color:rgba(255,255,255,0.6)"] {
+    color: var(--text) !important;
+} 
+
+.setBodH b[style="font-size:26px;color:rgba(255,255,255,0.8)"], .setBodH b[style="font-size:26px;color:rgba(255,255,255,0.8)"] span {
+    color: var(--text) !important;
+}
