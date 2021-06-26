@@ -1451,3 +1451,11 @@ input:checked+.optCheck {
     margin-top: 0px !important;
     text-align: center;
 }
+
+#customC0mdl, #customC0mdl option, #customC0movSch, #customC0movSch option, #customC1mdl, #customC1mdl option, #customC1movSch, #customC1movSch option, #customC2mdl, #customC2mdl option, #customC2movSch, #customC2movSch option, #customC3mdl, #customC3mdl option, #customC3movSch, #customC3movSch option, #customC4mdl, #customC4mdl option, #customC4movSch, #customC4movSch option, #customC5mdl, #customC5mdl option, #customC5movSch, #customC5movSch option, #customC6mdl, #customC6mdl option, #customC6movSch, #customC6movSch option, #customC7mdl, #customC7mdl option, #customC7movSch, #customC7movSch option, #customC8mdl, #customC8mdl option, #customC8movSch, #customC8movSch option, #customC9mdl, #customC9mdl option, #customC9movSch, #customC9movSch option, #customC10mdl, #customC10mdl option, #customC10movSch, #customC10movSch option, #customC11mdl, #customC11mdl option, #customC11movSch, #customC11movSch option, #customC12mdl, #customC12mdl option, #customC12movSch, #customC12movSch option, #customC13mdl, #customC13mdl option, #customC13movSch, #customC13movSch option, #customC14mdl, #customC14mdl option, #customC14movSch, #customC14movSch option {
+    background-color: var(--accent);
+    border-radius: 0px;
+    color: var(--background);
+    font-size: 15px;
+    transform: skew(-4deg);
+}
