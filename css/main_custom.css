@@ -41,6 +41,10 @@ a:hover {
     visibility: hidden;
 }
 
+#onetrust-consent-sdk {
+    display: none !important;
+}
+
 #streamContainer {
     visibility: visible;
     opacity: var(--stream);
@@ -1391,4 +1395,49 @@ input:checked+.optCheck {
 
 .hostCBtn:hover {
     transform: skew(-4deg);
+}
+
+.advancedToggle[style="background-color: rgb(33, 150, 243);"] {
+    background-color: var(--accent) !important;
+}
+
+#weaponSelect, #classSelect {
+    background-color: var(--accent) !important;
+    color: var(--background);
+    transform: skew(-4deg);
+    font-size: 15px;
+}
+
+#weaponSelect option, #classSelect option {
+    color: var(--background);
+}
+
+#customSnameTeam1, #customSnameTeam2 {
+    font-size: 20px;
+    background-color: transparent !important;
+    color: var(--text);
+    text-align: center;
+    border-bottom: 3px solid var(--accent) !important;
+    border-radius: 0px !important;
+    margin-top: -5px !important;
+}
+
+#customW0name, #customW1name, #customW2name, #customW3name, #customW4name, #customW5name, #customW6name, #customW7name, #customW8name, #customW9name, #customW10name, #customW11name, #customW12name, #customW13name, #customW14name, #customW15name, #customW16name, #customW17name, #customW18name, #customW19name, #customW20name {
+    font-size: 15px;
+    text-align: center;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    color: var(--text);
+    border-bottom: 3px solid var(--accent) !important;
+    margin-top: 0px !important;
+}
+
+#customW0assetIcon, #customW0pj_asset, #customW1assetIcon, #customW1pj_asset, #customW2assetIcon, #customW2pj_asset, #customW3assetIcon, #customW3pj_asset, #customW4assetIcon, #customW4pj_asset, #customW5assetIcon, #customW5pj_asset, #customW6assetIcon, #customW6pj_asset, #customW7assetIcon, #customW7pj_asset, #customW8assetIcon, #customW8pj_asset, #customW9assetIcon, #customW9pj_asset, #customW10assetIcon, #customW10pj_asset, #customW11assetIcon, #customW11pj_asset, #customW12assetIcon, #customW12pj_asset, #customW13assetIcon, #customW13pj_asset, #customW14assetIcon, #customW14pj_asset, #customW15assetIcon, #customW15pj_asset, #customW16assetIcon, #customW16pj_asset, #customW17assetIcon, #customW17pj_asset, #customW18assetIcon, #customW18pj_asset, #customW19assetIcon, #customW19pj_asset, #customW20assetIcon, #customW20pj_asset {
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid var(--accent) !important;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0px !important;
+    color: var(--text);
 }
