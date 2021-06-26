@@ -1441,3 +1441,13 @@ input:checked+.optCheck {
     margin-top: 0px !important;
     color: var(--text);
 }
+
+#customC0name, #customC0aID, #customC0cID, #customC0ccID, #customC1name, #customC1aID, #customC1cID, #customC1ccID, #customC2name, #customC2aID, #customC2cID, #customC2ccID, #customC3name, #customC3aID, #customC3cID, #customC3ccID, #customC4name, #customC4aID, #customC4cID, #customC4ccID, #customC5name, #customC5aID, #customC5cID, #customC5ccID, #customC6name, #customC6aID, #customC6cID, #customC6ccID, #customC7name, #customC7aID, #customC7cID, #customC7ccID, #customC8name, #customC8aID, #customC8cID, #customC8ccID, #customC9name, #customC9aID, #customC9cID, #customC9ccID, #customC10name, #customC10aID, #customC10cID, #customC10ccID, #customC11name, #customC11aID, #customC11cID, #customC11ccID, #customC12name, #customC12aID, #customC12cID, #customC12ccID, #customC13name, #customC13aID, #customC13cID, #customC13ccID, #customC14name, #customC14aID, #customC14cID, #customC14ccID  {
+    background-color: transparent !important;
+    font-size: 15px;
+    color: var(--text);
+    border-radius: 0px !important;
+    border-bottom: 3px solid var(--accent) !important;
+    margin-top: 0px !important;
+    text-align: center;
+}
