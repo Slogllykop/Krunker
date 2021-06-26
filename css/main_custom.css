@@ -1459,3 +1459,86 @@ input:checked+.optCheck {
     font-size: 15px;
     transform: skew(-4deg);
 }
+
+/*Server Browser*/
+.serverHeader {
+    background-color: var(--accent);
+    transform: skew(-4deg);
+  
+}
+
+.serverHeader .setBodH div a  {
+    color: var(--background) !important;
+}
+
+#serverSearch {
+    background-color: transparent;
+    color: var(--background);
+    border-bottom: 3px solid var(--background);
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+#serverSearch::selection {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+}
+
+#serverSearch::placeholder {
+    color: var(--background);
+}
+
+.switch2 .slider2::before {
+    content: "Hide Full";
+    font-size: 40px;
+    color: var(--background);
+    width: max-content;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    position: absolute;
+    line-height: 30px;
+    transform: translateX(-80%);
+}
+
+.switch2 input:checked+.slider2::before {
+    content: "Show Full";
+    transform: unset;
+    transform: translateX(-80%);
+}
+
+input:checked+.slider2 {
+    background-color: transparent !important;
+}
+
+.slider2 {
+    background: transparent;
+}
+
+#hideFull span[style="color:#fff"] {
+    display: none;
+}
+
+#hostMenuBtn {
+    background: none;
+}
+
+#hostMenuBtn span {
+    visibility: hidden;
+}
+
+#hostMenuBtn span::before {
+    font-size:45px;
+    content: "settings";
+    font-family: 'Material Icons';
+    visibility: visible;
+    transition-duration: 0.4s;
+    color: var(--background);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#hostMenuBtn:hover {
+    transform: unset;
+}
