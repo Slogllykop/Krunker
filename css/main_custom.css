@@ -1133,7 +1133,7 @@ input[type=color] {
 }
 
 .xpBarB {
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
 }
 
 .xpBarV {
