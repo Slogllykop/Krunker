@@ -1655,3 +1655,107 @@ img[src="./img/backgrounds/leak_0.png"], img[src="./img/lore/dragon_0.png"] {
 div[style="font-size:22px;margin-bottom:20px;margin-top:10px;color:rgba(255,255,255,0.6);width:100%;text-align:center"] {
     color: var(--text) !important;
 }
+
+
+/*Shop*/
+img[src="./img/backgrounds/item_shop_brb.png"] {
+    box-shadow: -10px 10px var(--accent);
+    transform: skew(-4deg);
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.6);margin-bottom:10px;margin-top:0px;width:100%;text-align:center"] {
+    color: var(--text) !important;
+}
+
+.shopCard {
+    color: var(--text) !important;
+    border-radius: 0px;
+    transform: skew(-4deg);
+}
+
+.spinVal span {
+    color: var(--text) !important;
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.5);margin-bottom:10px"] {
+    color: var(--chat-msg) !important;
+}
+
+.shopSale {
+    display: none;
+}
+
+#premTime {
+    font-size: 30px !important;
+    color: var(--text);
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.5);font-size:18px;margin-top:10px"] {
+    color: var(--text) !important;
+}
+
+.creatorCodeBtn {
+    color: var(--background) !important;
+    border-radius: 0px;
+    transform: skew(-4deg);
+    background-color: var(--accent) !important;
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.4);font-size:19px;margin-top:10px"] {
+    color: var(--text) !important;
+}
+
+div[style="color:rgba(255,255,255,0.4);font-size:19px;margin-top:10px;width:100%;text-align:center;"] {
+    color: var(--chat-msg) !important;
+}
+
+.redVouchBtn {
+    border-radius: 0px;
+    color: var(--background) !important;
+    background-color: var(--accent);
+    transform: skew(-4deg);
+}
+
+
+/*Challenges*/
+div[style="color: #eb5656;font-size: 21px;text-align: left;margin-bottom: 5px;"] {
+    color: var(--text) !important; 
+}
+
+.chalCard {
+    background-color: var(--background);
+    border: 0px;
+    box-shadow: -7px 7px var(--accent);
+    border-radius: 0px;
+    transform: skew(-4deg);
+    margin-right: 25px;
+    text-shadow: none;
+}
+
+.chalRight {
+    font-size: 35px;
+}
+
+.chalDesc {
+    font-size: 25px;
+}
+
+.chalImgC {
+    border-radius: 0px;
+    border: 3px solid var(--accent);
+}
+
+.chalProg {
+    color: var(--chat-msg) !important;
+    top: 5px;
+}
+
+.chalXPBarC {
+    background-color: var(--accent);
+}
+
+.chalXPBar { 
+    background-color: transparent;
+    border: 3px solid var(--accent);
+    border-radius: 0px;
+}
