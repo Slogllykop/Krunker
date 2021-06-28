@@ -1385,6 +1385,10 @@ input:checked+.optCheck {
     color: var(--text) !important;
 }
 
+#hostGameMsg span {
+    color: var(--text);
+}
+
 .hostCBtn {
     background-color: var(--accent);
     border: none;
@@ -1646,4 +1650,8 @@ img[src="./img/backgrounds/leak_0.png"], img[src="./img/lore/dragon_0.png"] {
 
 .bigMenTab span[style="font-size:42px;color:#fbc02d;vertical-align:middle;margin-top:-10px;"] {
     color: var(--background) !important;
+}
+
+div[style="font-size:22px;margin-bottom:20px;margin-top:10px;color:rgba(255,255,255,0.6);width:100%;text-align:center"] {
+    color: var(--text) !important;
 }
