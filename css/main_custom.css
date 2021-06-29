@@ -1730,6 +1730,7 @@ div[style="color: #eb5656;font-size: 21px;text-align: left;margin-bottom: 5px;"]
     transform: skew(-4deg);
     margin-right: 25px;
     text-shadow: none;
+    border: 3px solid var(--accent);
 }
 
 .chalRight {
