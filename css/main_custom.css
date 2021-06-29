@@ -2002,3 +2002,7 @@ div span[style="color:rgba(255,255,255,0.5)"] {
     color: var(--background) !important;
     transform: skew(-4deg);
 }
+
+.mailDate {
+    font-size: 20px;
+}
