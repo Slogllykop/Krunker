@@ -1130,6 +1130,7 @@ input[type=color] {
     background-color: transparent;
     transform: skew(-4deg);
     border: 5px solid var(--accent);
+    border-radius: 0px;
 }
 
 .xpBarB {
