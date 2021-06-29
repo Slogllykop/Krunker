@@ -800,6 +800,7 @@ input:checked+.sliderSml {
     transform: skew(-15deg);
     box-shadow: 6px 6px var(--accent);
     margin-left: 10px;
+    border-radius: 0px;
 }
 
 #chatInput::placeholder {
@@ -1964,4 +1965,32 @@ div span[style="color:rgba(255,255,255,0.5)"] {
     background-color: transparent;
     text-align: center;
     font-size: 20px;
+}
+
+
+/*Mail tab*/
+.mailObj {
+    background-color: var(--background) !important;
+    border-radius: 0px;
+    border: 3px solid var(--accent);
+    box-shadow: -5px 5px var(--accent);
+    transform: skew(-4deg);
+    margin-bottom: 25px; 
+}
+
+.mailFrom {
+    border-bottom: 3px solid var(--accent);
+    font-size: 25px;
+}
+
+.mailSubj {
+    color: var(--text);
+    font-size: 30px;
+}
+
+.mailText {
+    background: none;
+    font-size: 35px;
+    color: var(--chat-msg) !important;
+    border-bottom: 3px solid var(--chat-msg);
 }
