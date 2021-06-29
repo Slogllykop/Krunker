@@ -1760,3 +1760,130 @@ div[style="color: #eb5656;font-size: 21px;text-align: left;margin-bottom: 5px;"]
     border: 3px solid var(--accent);
     border-radius: 0px;
 }
+
+
+/*Games tab*/
+.bigMenTab.bigMenTabA span, .bigMenTab span {
+    color: var(--background) !important;
+}
+
+#mpSrch {
+    border-radius: 0px !important;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--text);
+    text-align: center;
+}
+
+#mpCat {
+    color: var(--background);
+    font-size: 20px;
+    background-color: var(--accent);
+    border-radius: 0px;
+    transform: skew(-4deg);
+}
+
+#mpCat option {
+    color: var(--background);
+}
+
+.searchBtn {
+    border-radius: 0px;
+    transform: skew(-4deg);
+    background-color: transparent;
+}
+
+.searchBtn span {
+    font-size: 50px !important;
+    color: var(--accent) !important;
+}
+
+#mapList {
+    color: var(--text) !important;
+}
+
+.mapListItem {
+    border-radius: 0px;
+    background-color: var(--background);
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-right: 43px;
+    border: 3px solid var(--accent);
+}
+
+.mapAgeD {
+    background-color: var(--background) !important;
+    border-radius: 0px;
+    font-size: 15px;
+}
+
+.mapsVotes {
+    text-shadow: none !important;
+    font-size: 25px;
+}
+
+.mapsVotes span {
+    color: var(--accent) !important;
+}
+
+.mapByTxt {
+    color: var(--chat-msg);
+}
+
+.cretrLnk {
+    color: var(--accent) !important;
+    font-size: 18px;
+}
+
+.mapActionB span {
+    color: var(--accent) !important;
+}
+
+.loadMoreD, .loadMoreD:hover {
+    background: var(--accent);
+    color: var(--background) !important;
+    font-size: 30px;
+    border-radius: 0px;
+    transform: skew(-4deg);
+}
+
+#defaultSettsInfo div[style="padding:10px;background-color:rgba(0,0,0,0.6);border: 3px solid rgba(255, 255, 255, 0.4);margin-bottom:0px;margin-top:10px;padding-left:15px;font-size:18px"] {
+    background: none !important;
+    border: none !important;
+    font-size: 30px !important;
+}
+
+#defaultSettsInfo div[style="color:rgba(255,255,255,0.6);font-size:18px;margin-bottom:5px;margin-top:20px;width:100%;text-align:center"] {
+    color: var(--text) !important;
+    font-size: 25px !important;
+}
+
+.bigMFeatHold {
+    box-shadow: -10px 10px var(--accent);
+    border-radius: 0px;
+    margin-bottom: 50px;
+}
+
+#bigMFeatPBtn, #bigMFeatHBtn, #bigMFeatPBtn:hover, #bigMFeatHBtn:hover {
+    border-radius: 0px;
+    background-color: var(--accent);
+    border: none;
+    box-shadow: -5px 5px var(--background);
+    color: var(--background) !important;
+    top: 220px;
+}
+
+#bigMFeatPBtn span, #bigMFeatHBtn span {
+    color: var(--background) !important;
+}
+
+.mFeatSepar {
+    background: none;
+    border: none;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+    border-radius: 0px;
+}
