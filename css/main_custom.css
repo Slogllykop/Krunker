@@ -1994,3 +1994,11 @@ div span[style="color:rgba(255,255,255,0.5)"] {
     color: var(--chat-msg) !important;
     border-bottom: 3px solid var(--chat-msg);
 }
+
+.readAll {
+    padding: 10px;
+    border-radius: 0px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+    transform: skew(-4deg);
+}
