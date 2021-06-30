@@ -525,7 +525,7 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     background-color: var(--accent);
     width: 55%;
     height: 140%;
-    margin-right: 45%;
+    right: 45%;
     z-index: -2;
     transform: skew(18deg);
     box-shadow: -10px -11px var(--background);
@@ -537,7 +537,7 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     background-color: var(--background);
     width: 50%;
     height: 141%;
-    margin-left: 50%;
+    left: 50%;
     transform: skew(-18deg);
     box-shadow: 10px -11px var(--accent);
     z-index: -1;
@@ -625,11 +625,11 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     content: " ";
     position: absolute;
     background-color: var(--background);
-    width: 15%;
+    width: 20%;
     height: 140%;
     transform: skew(18deg);
     box-shadow: -10px -11px var(--accent);
-    margin-right: 10%;
+    right: 45%;
     z-index: -1;
 }
   
@@ -643,7 +643,7 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     bottom: -20%;
     transform: skew(-18deg);
     box-shadow: 10px -11px var(--accent);
-    margin-left: 10%;
+    left: 50%;
     z-index: -1;
 }
 
