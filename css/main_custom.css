@@ -750,7 +750,7 @@ input:checked+.sliderSml {
     position: absolute;
     background-color: var(--background);
     margin-right: calc(20% - 110px);;
-    width: 260px;
+    width: 275px;
     height: 500px;
     transform: skew(4deg, 10deg);
     box-shadow: -10px 10px var(--accent);
