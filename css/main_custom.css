@@ -2036,3 +2036,306 @@ td {
     transform: skew(-4deg);
     background-color: var(--accent) !important;
 }
+
+/*Customize tab*/
+#selectorContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    background: none;
+    height: unset;
+}
+
+.selectorItem {
+    border: none;
+    width: unset;
+    height: 90px;
+    margin-right: 200px;
+    left: calc(30% + 20px);
+    background: none;
+}
+
+.selectorIcon {
+    display: none;
+}
+
+.selectedItem {
+    border: none !important;
+}
+
+#customizeContainer {
+    top: 10%;
+}
+
+.selectorLabel {
+    text-shadow: none;
+    font-size: 30px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+    padding: 10px;
+    transform: skew(-4deg);
+}
+
+.selectorItem:hover {
+    background: none;
+}
+
+#customizeContainer {
+    width: 100%;
+}
+
+.classCard {
+    border-radius: 0px;
+    background-color: var(--background);
+    border: 3px solid var(--accent);
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+    text-shadow: none;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.classWeap {
+    font-size: 0px;
+}
+
+.classLvl, .classHP {
+    font-size: 25px;
+}
+
+.classHP span {
+    color: var(--chat-msg) !important;
+}
+
+.classXPBar {
+    border-radius: 0px;
+    background: none;
+    border: 2px solid var(--accent);
+}
+
+.clsXPBarC {
+    border-radius: 0px;
+    background-color: var(--accent);
+}
+
+.classImgC {
+    border-radius: 0px;
+    margin-top: 10px;
+    border-bottom: 5px solid var(--accent);
+}
+
+#loadoutName {
+    border-radius: 0px;
+    font-size: 15px;
+    text-align: center;
+    background: none !important;
+    color: var(--text);
+    border-bottom: 2px solid var(--accent) !important;
+    margin-right: 10px;
+}
+
+#loadoutName::placeholder {
+    color: var(--text);
+}
+
+#loadoutSelect {
+    border-radius: 0px !important;
+    font-size: 15px;
+    background-color: var(--accent) !important;
+    color: var(--background);
+    padding: 10px !important;
+    transform: skew(-4deg);
+}
+
+#loadoutSelect option {
+    color: var(--background);
+}
+
+#loadoutHolder .settNameSmall {
+    border: none !important;
+}
+
+.loadoutBtn {
+    border-radius: 0px;
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+    transform: skew(-4deg);
+    font-size: 20px;
+}
+
+#customizeContainer div[style="border-bottom: 2px solid rgb(255,255,255,0.2);padding-bottom: 13px;margin-bottom: 13px;"] {
+    border-bottom: 3px solid var(--accent) !important;
+}
+
+.custContainer {
+    width: 90% !important;
+    transform: skew(-4deg);
+    right: -5%;
+    background: none;
+    border-radius: 0px;
+    border: 3px solid var(--accent);
+    box-shadow: -7px 7px var(--accent);
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.contCanSelect:hover {
+    background: none !important;
+}
+
+.custItNm {
+    font-size: 30px;
+}
+
+.custContainer .blackShad {
+    font-size: 30px;
+    text-shadow: none;
+}
+
+.settLabel[style="color:#efefef"], .settLabel[style="color:#2196F3"] {
+    color: var(--text) !important;
+}
+
+#itemSearchH {
+    background: none;
+}
+
+#itemSearch {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 0px;
+    border: none;
+    color: var(--text);
+    background: none;
+    border-bottom: 3px solid var(--accent);
+    padding: 10px;
+}
+
+#itemSearch::placeholder {
+    color: var(--text);
+}
+
+.skinCard {
+    border-radius: 0px;
+    background: var(--background);
+    border: 3px solid var(--accent) !important;
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+    margin: 25px;
+    font-size: 25px;
+    text-shadow: none;
+}
+
+.skinCard[style="color:#ed4242;border:5px solid#ed4242"] {
+    border: 3px solid #ed4242 !important;
+    box-shadow: -7px 7px #ed4242 !important;
+}
+
+.skinCard[style="color:#FBC02D;border:5px solid#FBC02D"] {
+    border: 3px solid #FBC02D !important;
+    box-shadow: -7px 7px #FBC02D !important;
+}
+
+.skinCard[style="color:#E040FB;border:5px solid#E040FB"] {
+    border: 3px solid #E040FB !important;
+    box-shadow: -7px 7px #E040FB !important;
+}
+
+.skinCard[style="color:#2196F3;border:5px solid#2196F3"] {
+    border: 3px solid #2196F3 !important;
+    box-shadow: -7px 7px #2196F3 !important;
+}
+
+.skinCard[style="color:#b2f252;border:5px solid#b2f252"] {
+    border: 3px solid #b2f252 !important;
+    box-shadow: -7px 7px #b2f252 !important;
+}
+
+.skinCard[style="color:#292929;border:5px solid#292929"] {
+    border: 3px solid #292929 !important;
+    box-shadow: -7px 7px #292929 !important;
+}
+
+.skinCard:hover {
+    background: none;
+}
+
+.itemOwn, .itemSea {
+    font-size: 15px;
+}
+
+.selctInfoBtn, .selctInfoBtn:hover {
+    font-size: 20px;
+    border-radius: 0px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+}
+
+.selctFavBtn {
+    color: var(--accent) !important;
+    filter: none;
+}
+
+.selctFavBtn:hover {
+    transform: unset;
+}
+
+.itemCnt[data-badge]:after {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 0px;
+    color: var(--background);
+    background-color: var(--accent);
+}
+
+.noBtnCard {
+    border-radius: 0px;
+    margin: 20px;
+    border: 3px solid var(--accent) !important;
+    background: none;
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+    text-shadow: none;
+    font-size: 25px;
+}
+
+.noBtnCard:hover {
+    background: none;
+}
+
+.blackShad {
+    text-shadow: none;
+}
+
+.selctDelBtn, .selctDelBtn:hover {
+    border-radius: 0px;
+    padding: 5px;
+    color: var(--background) !important;
+    background: var(--accent);
+}
+
+select[onchange="selectStat(this.value)"] {
+    background: var(--accent);
+    color: var(--background);
+}
+
+select[onchange="selectStat(this.value)"] option {
+    color: var(--background) !important;
+}
+
+.skinColorItem {
+    border-radius: 0px;
+    border: 1px solid var(--accent);
+    transform: skew(-4deg);
+}
+
+.skinColorItem:hover, .activeSkin {
+    border-radius: 0px !important;
+}
+
+.premiumSkinCol[onclick*="windows[13].premium()"] {
+    color: var(--accent) !important;
+}
