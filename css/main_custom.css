@@ -200,7 +200,8 @@ a:hover {
     content: " ";
     position: absolute;
     background-color: var(--background);
-    width: 175px;
+    width: 200px;
+    right: -25px;
     height: 110%;
     top: -4.7%;
     box-shadow: -10px 9px var(--accent);
