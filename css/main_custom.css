@@ -2339,3 +2339,53 @@ select[onchange="selectStat(this.value)"] option {
 .premiumSkinCol[onclick*="windows[13].premium()"] {
     color: var(--accent) !important;
 }
+
+
+/*Account login tab*/
+#referralHeader {
+    background: var(--accent);
+    color: var(--background) !important;
+    padding: 20px;
+}
+
+div[style="height:20px;"] {
+    height: 250px !important;
+}
+
+#accName, #accPass {
+    border-radius: 0px;
+    background: none;
+    border-bottom: 3px solid var(--accent);
+    text-align: center;
+    color: var(--text);
+    font-size: 25px;
+} 
+
+#accName::placeholder, #accPass::placeholder {
+    color: var(--text);
+}
+
+#accResp {
+    color: var(--text) !important;
+}
+
+#accResp span {
+    color: var(--chat-msg) !important;
+}
+
+div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"] {
+    background: none !important;
+}
+
+.accountButton {
+    padding: 20px;
+    border-radius: 0px;
+    background-color: var(--accent);
+    color: var(--background) !important;
+    font-size: 25px;
+    transform: skew(-4deg);
+}
+
+input:-internal-autofill-selected {
+    background: transparent !important;
+}
