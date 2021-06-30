@@ -845,7 +845,7 @@ input:checked+.sliderSml {
     position: absolute;
     background-color: var(--accent);
     width: 70%;
-    margin-right: 30%;
+    right: 30%;
     height: 210px;
     transform: skew(-18deg);
     box-shadow: -10px 9px var(--background);
@@ -857,7 +857,7 @@ input:checked+.sliderSml {
     position: absolute;
     background-color: var(--accent);
     width: 70%;
-    margin-left: 30%;
+    left: 30%;
     height: 210px;
     transform: skew(18deg);
     box-shadow: 10px 9px var(--background);
