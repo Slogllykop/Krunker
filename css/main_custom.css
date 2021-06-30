@@ -2401,3 +2401,93 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 input:-internal-autofill-selected {
     background: transparent !important;
 }
+
+
+/*Spin UI*/
+div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(255, 255, 255, 0.4);margin-bottom:0px;margin-top:0px;padding-left:15px;font-size:18px"] {
+    background: none !important;
+    border: none !important;
+    font-size: 30px !important;
+}
+
+#customStmSize, #customStmSize option {
+    background-color: var(--accent);
+    color: var(--background);
+    transform: skew(-4deg);
+}
+
+#spinButton {
+    background-color: var(--accent);
+}
+
+#spinHeader, #spinCost {
+    color: var(--background) !important;
+}
+
+#spinWindow, #spinButton {
+    top: 40%;
+}
+
+#spinKR {
+    border-radius: 0px;
+    background: var(--background);
+    color: var(--chat-msg);
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+}
+
+#spinKR span {
+    color: var(--text) !important;
+}
+
+.spinPrevIcon {
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: -7px 7px var(--accent);
+    border: 3px solid var(--background) !important;
+}
+
+#spinItems span[style="color:#fff;line-height:85px;margin-left:6px"] {
+    color: var(--background) !important;
+    text-shadow: -3px 3px 0px var(--accent);
+    font-size: 30px;
+}
+
+#spinInfo {
+    border-radius: 0px;
+    background-color: transparent;
+    top: -30px;
+    right: 0px;
+}
+
+#spinInfo::before {
+    content: " ";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background-color: var(--background);
+    box-shadow: -7px 7px var(--accent);
+    z-index: -1;
+    transform: skew(4deg, 10deg);
+    top: -10%;
+    right: -20%;
+}
+
+#spinInfo div[style="font-size:50px;color:#fff"] {
+    color: var(--text) !important;
+}
+
+#spinInfo div span {
+    color: var(--chat-msg) !important;
+    margin-top: 12px;
+}
+
+#spinInfo div {
+    margin-top: 5px !important;
+    border-bottom: 1.5px solid var(--accent);
+    color: var(--text) !important;
+}
+
+#spinInfo div:nth-child(1) {
+    border: none !important;
+}
