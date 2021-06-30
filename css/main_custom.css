@@ -60,7 +60,7 @@ a:hover {
 }
 
 #braveWarning {
-    visibility: hidden;
+    display: none !important;
 }
 
 #faceItIconM {
@@ -190,10 +190,9 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     bottom: -2%;
-    top: calc(100% - 15.5em);
+    top: 50%;
     left: 97%;
     font-size: 35px !important;
-    margin-top: 0px;
 }
 
 #subLogoButtons::before {
@@ -201,8 +200,8 @@ a:hover {
     position: absolute;
     background-color: var(--background);
     width: 175px;
-    height: 650px;
-    bottom: -10%;
+    height: 110%;
+    top: -4.7%;
     box-shadow: -10px 9px var(--accent);
     transform: skewX(-4deg) skewY(-18deg);
 }
