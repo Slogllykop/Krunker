@@ -2006,3 +2006,33 @@ div span[style="color:rgba(255,255,255,0.5)"] {
 .mailDate {
     font-size: 20px;
 }
+
+
+/*Members list*/
+.pListTable {
+    background: none;
+}
+
+th, tr {
+    border-bottom: 3px solid var(--accent);
+}
+
+.pListName i[style="font-size:25px"] {
+    color: var(--accent);
+    transform: translateY(6px);
+    margin-right: 10px;
+}
+
+td {
+    color: var(--chat-msg);
+    font-size: 25px;
+}
+
+.punishButton {
+    text-shadow: none;
+    color: var(--background);
+    padding: 7px;
+    border-radius: 0px;
+    transform: skew(-4deg);
+    background-color: var(--accent) !important;
+}
