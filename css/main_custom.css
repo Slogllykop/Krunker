@@ -101,7 +101,7 @@ a:hover {
 /*Menu left*/
 #menuItemContainer {
     position: fixed;
-    top: calc(100% - 22em);
+    top: 50% !important;
     bottom: 0px;
     font-size: 25px;
     justify-content: space-between;
@@ -112,10 +112,11 @@ a:hover {
     position: absolute;
     background-color: var(--background);
     width: 175px;
-    height: 600px;
+    height: 110%;
+    top: -2.3%;
     transform: skewX(4deg) skewY(18deg);
     box-shadow: 10px 9px var(--accent);
-    left: calc(0% - 15%);
+    left: -15%;
     z-index: -1;
 }
 
@@ -150,7 +151,7 @@ a:hover {
 
 .menuItem[onclick*="showWindow(1)"] {
     position: fixed;
-    bottom: 500px;
+    bottom: 46.5%;
     left: -100px;
     padding: 0;
     visibility: hidden;
