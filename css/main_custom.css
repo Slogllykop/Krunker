@@ -263,10 +263,10 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
 /*Menu bottom*/
 #hiddenClasses {
     display: flex !important;
-    flex-direction:row;
-    position:fixed;
-    left:50%;
-    bottom:-20px;
+    flex-direction: row;
+    position: fixed;
+    left: 50%;
+    bottom: -20px;
     transform: translate(-50%,-50%);
     margin-right: 10px;
 }
@@ -903,6 +903,111 @@ input:checked+.sliderSml {
     font-size: 30px;
     color: var(--background);
 }
+
+
+/*Update log*/
+div[style="margin-bottom:15px"] div[style="height:20px;"] {
+    height: 20px !important;
+}
+
+.mailFrom[style="color: #fbc02d;"] {
+    color: var(--text) !important;
+}
+
+.changeText {
+    color: var(--chat-msg) !important;
+    border-bottom: 2px solid var(--accent);
+}
+
+.mailObj i {
+    color: var(--accent) !important
+}
+
+/*Contact tab*/
+.setHed[style="margin-top:0px;"], .setHed[style="margin-top:20px;"] {
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.4);margin-top:0px"] {
+    color: var(--chat-msg) !important;
+}
+
+.setBodH div b {
+    color: var(--chat-msg) !important;
+}
+
+.setBodH div[style="color:rgba(255,255,255,0.4);margin-top:10px"] {
+    color: var(--chat-msg) !important;
+}
+
+.setBodH[style="padding-top:15px"] {
+    color: var(--chat-msg) !important;
+}
+
+.setBodH[style="padding-top:15px"] b {
+    color: var(--chat-msg) !important;
+}
+
+
+/*Advertise tab*/
+.setBodH div[style="color:rgba(255,255,255,0.6)"] {
+    color: var(--chat-msg) !important;
+}
+
+#bidValBB {
+    border-radius: 0px;
+    color: var(--text);
+    background: none;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+#bidTextBB {
+    border-radius: 0px;
+    text-align: center;
+    background: var(--background);
+    border: 3px solid var(--accent);
+    box-shadow: -5px 5px var(--accent);
+    transform: skew(-4deg);
+    color: var(--text);
+}
+
+#bidTextBB::placeholder {
+    color: var(--text);
+}
+
+img[src="/img/ad_2.png"] {
+    width: 100% !important;
+    height: 15% !important;
+    opacity: 0;
+}
+
+#bidPrevBB {
+    top: 320px;
+    left: 30%;
+    width: 300px;
+    height: 150px;
+    transform: skew(-4deg);
+    box-shadow: -7px 7px var(--accent);
+    border: 3px solid var(--accent);
+}
+
+#bidPrevBtn, #bidPrevBtn:hover {
+    top: 380px;
+    right: calc(40% - 100px);
+    text-shadow: none;
+    border-radius: 0px;
+    background-color: var(--accent) !important;
+    color: var(--background) !important;
+    font-size: 20px;
+    transform: skew(-4deg);
+}
+
+#bidPrevBtn span {
+    color: var(--background) !important;
+}
+
 
 /*Settings*/
 #windowHolder {
