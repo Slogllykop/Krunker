@@ -75,6 +75,11 @@ a:hover {
     display: none !important;
 }
 
+.mycustomButton {
+    display: none !important;
+}
+
+
 /*Loading background*/
 #loadingBg {
     background-image:url(https://cdn.discordapp.com/attachments/778689541535957013/837250864267526194/4qoMkfx.gif);
