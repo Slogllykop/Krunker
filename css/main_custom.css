@@ -2193,6 +2193,31 @@ td {
     background-color: var(--accent) !important;
 }
 
+#menuWindow.dark[style="overflow-y: auto; width: 877px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] {
+    top: 5% !important;
+    bottom: 49%;
+    left: 10%;
+    padding: 5%;
+    overflow-y: auto;
+    padding-top: 0;
+}
+
+#menuWindow.dark[style="overflow-y: auto; width: 877px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"]::before {
+    content: " ";
+    position: fixed;
+    left: 12%;
+    top: 3%;
+    background-color: var(--background);
+    width: 75% !important;
+    height: 50%;
+    z-index: -2;
+    transform: skew(-3deg);
+    box-shadow: -10px 10px var(--accent);
+    border-right: 10px dashed var(--accent); 
+    bottom: 10% !important;
+}
+
+
 /*Customize tab*/
 #selectorContainer {
     display: flex;
