@@ -840,8 +840,8 @@ input:checked+.sliderSml {
 /*Menu map and mod holder*/
 #mapInfoHolder {
     align-items: center;
-    right: 55vw;
-    left: 55vw;
+    right: 34%;
+    left: 34%;
     transform: translateY(-90px);
     z-index: 1;
 }
