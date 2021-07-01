@@ -116,12 +116,12 @@ a:hover {
     content: " ";
     position: absolute;
     background-color: var(--background);
-    width: 175px;
+    width: 230px;
     height: 110%;
     top: -2.3%;
     transform: skewX(4deg) skewY(18deg);
     box-shadow: 10px 9px var(--accent);
-    left: -15%;
+    left: -55%;
     z-index: -1;
 }
 
