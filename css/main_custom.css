@@ -931,8 +931,9 @@ div[style="margin-bottom:15px"] div[style="height:20px;"] {
 
 /*Contact tab*/
 .setHed[style="margin-top:0px;"], .setHed[style="margin-top:20px;"] {
-    text-align: center;
+    text-align: left;
     border-bottom: 3px solid var(--accent);
+    border-radius: 0px;
 }
 
 .setBodH div[style="color:rgba(255,255,255,0.4);margin-top:0px"] {
