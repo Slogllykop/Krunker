@@ -1016,6 +1016,38 @@ img[src="/img/ad_2.png"] {
 }
 
 
+/*Top Refferals*/
+.setBodH[style="padding-top:10px;padding-bottom:10px;margin-bottom:25px;color:rgba(255,255,255,0.5);"] {
+    color: var(--text) !important;
+}
+
+.setBodH[style="padding-top:10px;padding-bottom:10px;margin-bottom:25px;color:rgba(255,255,255,0.5);"] span {
+    color: var(--chat-msg) !important;
+}
+
+.setHed span[style="float:right;color:rgba(255, 255, 255, 0.6)"] {
+    color: var(--text) !important;
+}
+
+.settName div[style="float:right;color:rgba(255,255,255,0.5)"] {
+    color: var(--chat-msg) !important;
+}
+
+.refAnot {
+    color: var(--background) !important;
+    background-color: var(--accent) !important;
+    border-radius: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transform: skew(-4deg);
+}
+
+.refAnot span {
+    color: var(--background) !important;
+}
+
+
 /*Settings*/
 #windowHolder {
     background-color: rgba(0, 0, 0, 0.75) !important;
