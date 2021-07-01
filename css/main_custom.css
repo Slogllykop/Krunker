@@ -910,6 +910,20 @@ input:checked+.sliderSml {
     color: var(--background);
 }
 
+.voteHint {
+    text-shadow: none;
+    border-radius: 0px;
+    color: var(--text);
+    background-color: var(--background);
+    transform: skew(-4deg);
+}
+
+#mapVoteD, #mapVoteU, #mapVoteD:hover, #mapVoteU:hover {
+    color: var(--background);
+    font-size: 30px;
+    transform: scale(1);
+}
+
 
 /*Update log*/
 div[style="margin-bottom:15px"] div[style="height:20px;"] {
