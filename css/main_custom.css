@@ -2231,6 +2231,10 @@ td {
     bottom: 10% !important;
 }
 
+.pListName span[style="color:#353535"] {
+    color: var(--chat-msg) !important;
+}
+
 
 /*Customize tab*/
 #selectorContainer {
@@ -2782,4 +2786,112 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 #confPop div[style="color:#fff;font-size:20px;position:relative;margin-bottom:15px;"] {
     color: var(--text) !important;
     font-size: 30px !important;
+}
+
+
+/*Trade UI*/
+.tListN.inv {
+    color: var(--background) !important;
+    font-size: 30px;
+}
+
+.tSearch {
+    text-align: center;
+    border-radius: 0px;
+    background: none;
+    color: var(--text);
+    border-bottom: 3px solid var(--accent);  
+    font-size: 25px;
+}
+
+.tSearch::placeholder {
+    color: var(--text);
+}
+
+#tHeader0, #tHeader1 {
+    border-radius: 0px;
+    text-align: center;
+    font-size: 25px;
+    background: none !important;
+}
+
+#tradeReady0, #tradeReady1 {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+#tradeTotal0, #tradeTotal1 {
+    color: var(--accent);
+}
+
+.estOfferVal{
+    font-size: 25px;
+}
+
+.estOfferVal span {
+    color: var(--chat-msg) !important;
+}
+
+.tSubCheck, .tDecCheck, .tSubCheck:hover, .tDecCheck:hover {
+    border-radius: 0px;
+    background-color: var(--accent) !important;
+    transform: skew(-4deg);
+}
+
+#tSubName, #tDecName {
+    text-shadow: none;
+    font-size: 25px;
+    color: var(--background);
+}
+
+.tItemBound .material-icons[style="font-size:30px;color:#fff;"] {
+    color: var(--accent) !important;
+}
+
+#menuWindow.dark[style="overflow-y: auto; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"]::before {
+    bottom: 40%;
+    height: 60%;
+}
+
+#tradeChatHolder {
+    left: calc(11% + 10px);
+    bottom: 10px;
+    top: 61%;
+    transform: unset;
+    display: flex !important;
+    flex-direction: row-reverse;
+    width: 70%;
+    align-items: flex-start;
+}
+
+#tradeChatInput::placeholder {
+    color: var(--text);
+}
+
+#tradeChatInput {
+    font-size: 30px;
+    background-color: var(--background);
+    padding: 10px;
+    color: var(--text);
+    box-shadow: -5px 5px var(--accent);
+    transform: skew(-3deg);
+    border-bottom: 3px solid var(--accent);
+    margin-right: 20px;
+}
+
+.tradeChatItem {
+    font-size: 30px;
+    max-width: 100%;
+    width: 95%;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 5px solid var(--accent);
+    transform: skew(-5deg);
+    margin-left: 20px;
+}
+
+#tradeChatList {
+    max-height: 100%;
 }
