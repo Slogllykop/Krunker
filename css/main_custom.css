@@ -48,7 +48,16 @@ a:hover {
 #streamContainer {
     visibility: visible;
     opacity: var(--stream);
-    transform: translateX(60vw) translateY(85vh) !important;
+    background-color: var(--background);
+    border-radius: 0px;
+    transform: skew(-4deg) !important;
+    box-shadow: -5px 5px var(--accent);
+}
+
+#tlInfHold {
+    top: unset;
+    bottom: 10px;
+    left: 10%;
 }
 
 ::-webkit-scrollbar {
