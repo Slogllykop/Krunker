@@ -50,7 +50,7 @@ a:hover {
     opacity: var(--stream);
     background-color: var(--background);
     border-radius: 0px;
-    transform: skew(-4deg) !important;
+    transform: skew(4deg) !important;
     box-shadow: -5px 5px var(--accent);
 }
 
