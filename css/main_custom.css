@@ -2679,3 +2679,107 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     text-shadow: none;
     color: var(--text);
 }
+
+
+/*Popups*/
+#popupContent {
+    border-radius: 0px;
+    background-color: var(--background) !important;
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg);
+}
+
+#popupContent div div[style="font-size:20px;color:rgba(255,255,255,0.5)"] {
+    color: var(--text) !important;
+    font-size: 30px !important;
+}
+
+#popupContent div i[style="font-size:80px;color:#e33b3b"] {
+    color: var(--accent) !important;
+}
+
+#popupContent div i[style="font-size:80px;color:#3be354"] {
+    color: var(--accent) !important;
+}
+
+#polConfPop {
+    border-radius: 0px;
+    background-color: var(--background);
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg) translate(-50%, -50%);
+    width: 400px;
+}
+
+#polConfPop div[style="color:rgba(0,0,0,0.6);font-size:20px;margin-bottom:15px;"] {
+    color: var(--text) !important;
+    font-size: 30px !important;
+}
+
+#polConfPop div b {
+    color: var(--chat-msg) !important;
+}
+
+#confirmBtn, #declineBtn, #confirmBtn:hover, #declineBtn:hover {
+    border-radius: 0px;
+    text-shadow: none;
+    background-color: var(--accent);
+    font-size: 25px;
+    padding: 10px;
+    color: var(--background);
+}
+
+#confirmBtn span.material-icons {
+    display: none;
+}
+
+#claimPop {
+    border-radius: 0px;
+    box-shadow: -7px 7px var(--accent);
+    transform: skew(-4deg) translate(-50%, -51%);
+    color: var(--text) !important;
+    font-size: 30px !important;
+}
+
+.button {
+    text-shadow: none !important;
+}
+
+div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"]:hover {
+    text-align: center;
+    background-color: var(--background) !important;
+    padding: 20px;
+    transform: scale(1);
+    font-size: 30px;
+}
+
+.claimSubTxt {
+    text-shadow: none;
+    color: var(--background);
+}
+
+#confPop {
+    border-radius: 0px;
+    border: none;
+    background-color: var(--background);
+    transform: translate(-50%, -50%) skew(-4deg);
+    box-shadow: -7px 7px var(--accent);
+    width: 450px;
+}
+
+#confPop div[style="color:#fff;font-size:15px;position:relative;margin-bottom:15px;"] {
+    color: var(--text) !important;
+    font-size: 30px !important;
+}
+
+.takeActionTable span {
+    text-shadow: none;
+    border-radius: 0px;
+    background-color: var(--accent) !important;
+    color: var(--background);
+    font-size: 25px;
+}
+
+#confPop div[style="color:#fff;font-size:20px;position:relative;margin-bottom:15px;"] {
+    color: var(--text) !important;
+    font-size: 30px !important;
+}
