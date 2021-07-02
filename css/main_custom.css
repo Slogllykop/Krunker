@@ -18,6 +18,10 @@
     font-family: var(--font) !important;
 }
 
+.material-icons {
+    font-family: 'Material Icons' !important;
+}
+
 /*Links*/
 a {
     color: var(--text);
@@ -2828,6 +2832,30 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 #confPop div[style="color:#fff;font-size:20px;position:relative;margin-bottom:15px;"] {
     color: var(--text) !important;
     font-size: 30px !important;
+}
+
+#instructionsUpdate {
+    background-color: var(--background);
+    border-radius: 0px;
+    transform: skew(-4deg) translate(-50%, -50%);
+    box-shadow: -10px 10px var(--accent);
+    border: 3px solid var(--accent);
+    padding: 20px;
+}
+
+#instructionsUpdate div[style="color: rgba(255, 255, 255, 0.6);margin-top: 5px;"] {
+    color: var(--text) !important;
+    font-size: 40px;
+}
+
+#instructionsUpdate div[style="margin-top:10px;font-size:15px;color:rgba(255,255,255,0.4)"], #instructionsUpdate div[style="margin-top:10px;font-size:15px;color:rgba(255,255,255,0.4)"],
+#instructionsUpdate div[style="margin-top:10px;font-size:13px;color:rgba(255,255,255,0.4)"] {
+    font-size: 25px !important;
+    color: var(--chat-msg) !important;
+}
+
+#instructionsUpdate div[style="color: rgba(255, 255, 255, 0.6);font-size: 20px;margin-bottom: 13px;margin-top: 10px;"], #instructionsUpdate div[style="color: rgba(255, 255, 255, 0.6);font-size: 20px;margin-bottom: 13px;margin-top: 10px;"] {
+    font-size: 25px !important;
 }
 
 
