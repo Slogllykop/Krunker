@@ -611,6 +611,10 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     width: calc(100% - 250px);
 }
 
+#menuFPSDisplay {
+    color: var(--chat-msg);
+}
+
 #mLevelCont {
     display: none;
 }
