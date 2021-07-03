@@ -3260,4 +3260,43 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 }
 
 
-/**/
+/*Top right*/
+#topRight {
+    right: 0px;
+    top: 0px;
+}
+
+#leaderDisplay {
+    border-radius: 0px;
+    background: none;
+    color: var(--text);
+}
+
+#leaderDisplay::before {
+    position: absolute;
+    content: " ";
+    background-color: var(--background);
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+    transform: skew(4deg, 10deg);
+    bottom: 10%;
+    right: -30%;
+    box-shadow: -7px 7px var(--accent); 
+}
+
+.leaderItem {
+    font-size: 25px;
+}
+
+.leaderNameF {
+    color: var(--text);
+}
+
+.leaderNameM span[style="color:#fff"] {
+    color: var(--accent) !important;
+}
+
+.leaderCounter, .leaderScore {
+    color: var(--chat-msg);
+}
