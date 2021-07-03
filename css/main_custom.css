@@ -3025,6 +3025,8 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 .hpBSeg {
     border-radius: 0px;
     box-shadow: none;
+    color: var(--accent) !important;
+    background-color: var(--accent) !important;
 }
 
 #bottomLeftHolder {
