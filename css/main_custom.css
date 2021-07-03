@@ -121,6 +121,10 @@ a:hover {
     color: var(--text);
 }
 
+#instructionsUpdateBG {
+    z-index: -1
+}
+
 /*Section - Menu*/
 
 /*Menu left*/
