@@ -575,8 +575,8 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     display: flex;
     position: fixed;
     top: unset;
-    left: 50vw;
-    right: 50vw;
+    left: 30%;
+    right: 30%;
     background: none;
     justify-content: center;
 }
@@ -680,8 +680,8 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     display: flex;
     position: fixed;
     top: calc(0% + 80px);
-    left: 50vw;
-    right: 50vw;
+    left: 30%;
+    right: 30%;
     background: none;
     justify-content: center;
     z-index: -1;
@@ -900,8 +900,8 @@ input:checked+.sliderSml {
 /*Menu map and mod holder*/
 #mapInfoHolder {
     align-items: center;
-    right: 34%;
-    left: 34%;
+    right: 33%;
+    left: 33%;
     transform: translateY(-90px);
     z-index: 1;
 }
