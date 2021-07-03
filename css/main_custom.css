@@ -3215,9 +3215,9 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     z-index: -1;
     width: 170%;
     height: 140%;
-    transform: skew(-18deg);
+    transform: skew(-4deg, -10deg);
     left: -30%;
-    bottom: -5%; 
+    bottom: -13%;
     background-color: var(--background);
     box-shadow: 7px 7px var(--accent);
 }
