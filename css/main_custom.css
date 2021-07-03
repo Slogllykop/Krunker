@@ -3277,11 +3277,11 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     content: " ";
     background-color: var(--background);
     width: 120%;
-    height: 120%;
+    height: 200%;
     z-index: -1;
     transform: skew(4deg, 10deg);
-    bottom: 10%;
-    right: -30%;
+    bottom: -50%;
+    right: -15%;
     box-shadow: -7px 7px var(--accent); 
 }
 
@@ -3299,4 +3299,158 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 
 .leaderCounter, .leaderScore {
     color: var(--chat-msg);
+}
+
+
+/*Counters*/
+.topRightCounters {
+    display: flex;
+    flex-direction: column;
+}
+
+.countIcon {
+    background: none;
+    font-size: 35px;
+}
+
+.topRightCounters {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-end;
+    transform: translateY(-50%);
+    bottom: 1%;
+    right: 0%;
+    width: auto !important;
+}
+
+.topRightCounters::before {
+    content: " ";
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    background-color: var(--background);
+    top: -10%;
+    left: -17%;
+    z-index: -1;
+    transform: skew(0deg, -18deg);
+    box-shadow: -10px 10px var(--accent);
+}
+
+#killsIcon, #streakIcon, #kdIcon, #scoreCount i[style="color:#ffc147;font-size:24px;"],#livesCount i[style="color:#fff;font-size:24px"], #deathsIcon {
+    display: none !important;
+} 
+
+#killsVal, #streakVal, #kdVal, #myScoreVal, #deathsVal, #livesDisp {
+    color: var(--chat-msg) !important;
+}
+
+#livesDisp::after {
+    content: " L";
+    color: var(--accent);
+}
+
+#deathsVal::after {
+    content: " D";
+    color: var(--accent);
+}
+
+#myScoreVal::after {
+    content: " Sc";
+    color: var(--accent);
+}
+
+#kdVal::after {
+    content: " KD";
+    color: var(--accent);
+}
+
+#streakVal::after {
+    content: " St";
+    color: var(--accent);
+}
+
+#killsVal::after {
+    content: " K";
+    color: var(--accent);
+}
+
+
+/*Weapon*/
+#weapDisplay {
+    display: block !important;
+    position: fixed;
+    left: unset;
+    top: unset;
+    right: calc(50% - 65px);
+    bottom: 0%;
+}
+
+.weapKey {
+    visibility: hidden !important;
+}
+
+.weapItem {
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    left: unset;
+}
+
+.weapIcon {
+    opacity: 0 !important;
+    height: 0px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--accent))  drop-shadow(2px 0px 1px var(--accent));
+    height: 65px;
+    width: auto;
+    transition-duration: 0.05s;
+}
+
+
+/*Bottom right*/
+#ammoIcon {
+    display: none;
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoVal {
+    font-size: 100px;
+    color: var(--text);
+    text-align: right;
+}
+
+#bottomRight {
+    bottom: 0px;
+    right: 0px;
+    z-index: 10 !important;
+}
+
+#ammoDisplay {
+    background: transparent;
+    border-radius: 0px;
+    margin-bottom: 23%;
+    margin-right: 1%;
+}
+
+#ammoDisplay::before {
+    content: " ";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: var(--background);
+    z-index: -1;
+    left: -50%;
+    transform: skew(-10deg);
+    box-shadow: -10px 10px var(--accent);
 }
