@@ -13,6 +13,10 @@
     --chat-msg: white;
 }
 
+
+/*Section - MISC*/
+
+
 /*Global font*/
 * {
     font-family: var(--font) !important;
@@ -125,7 +129,9 @@ a:hover {
     z-index: -1;
 }
 
+
 /*Section - Menu*/
+
 
 /*Menu left*/
 #menuItemContainer {
@@ -2973,3 +2979,283 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 #tradeChatList {
     max-height: 100%;
 }
+
+
+/*Section - InGame*/
+
+/*Bottom left*/
+#bottomLeftHolder div[style="display:inline-block;vertical-align:bottom"] {
+    display: flex !important;
+    flex-direction: column-reverse;
+}
+
+#maxHP, #challIcon, #hudClassIcon {
+    display: none;
+}
+
+#healthBar {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 450px;
+    transform: skew(0deg, 18deg);
+    margin-left: -10%;
+    margin-bottom: -16%;
+    z-index: -1;
+    padding: 0px;
+}
+
+#healthBar::before {
+    content: " ";
+    position: fixed;
+    width: 105px;
+    height: 450px;
+    background-color: var(--background);
+    left: 0px;
+}
+
+.healthBarSeg {
+    border-radius: 0px;
+    background-color: transparent;
+    margin-right: 0px;
+    width: 102px;
+    transform: rotate(-90deg);
+    padding: 0px;
+}
+
+.hpBSeg {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#bottomLeftHolder {
+    left: 0px;
+    bottom: 0px;
+}
+
+#healthValueHolder {
+    background: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#healthValueHolder::before {
+    content: " ";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    left: -15px;
+    background-color: var(--background);
+    transform: skew(10deg) translateX(23%);
+    box-shadow: 10px 10px var(--accent);
+}
+
+#healthValue {
+    font-size: 100px;
+    color: var(--text);
+}
+
+
+/*Ingame chat*/
+#uiBase.onGame #chatHolder {
+    bottom: 55%;
+    left: 0px;
+}
+
+
+/*Top*/
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 0px;
+    left: 50%;
+    border-radius: 0px;
+    background: none;
+    will-change: unset;
+}
+
+#timerDisplay::before {
+    content: " ";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 40%;
+    bottom: 1%;
+    background-color: var(--background);
+    box-shadow: -7px -7px var(--accent);
+    transform: skew(18deg);
+    z-index: -1;
+}
+
+#timerDisplay::after {
+    content: " ";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 40%;
+    bottom: 1%;
+    background-color: var(--background);
+    box-shadow: 7px -7px var(--accent);
+    transform: skew(-18deg);
+    z-index: -1;
+}
+
+#timerVal {
+    font-size: 40px;
+    padding: 5px;
+    will-change: unset;
+    color: var(--text);
+}
+
+#timerIcon {
+    display: none;
+}
+
+#teamScores {
+	position: fixed;
+	top: -1%;
+	left: 50%;
+	transform: translateX(-50%);
+    width: 10%;
+	padding: 10px;
+	background: none;
+    height: auto;
+}
+
+.tScore {
+	display: inline-block;
+}
+
+#tScoreV1 {
+	position: fixed;
+	left: -75%;
+}
+
+#tScoreV1::after {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #eb5656;
+    margin-left: 6%;
+    top: 3px;
+    transform: skew(18deg);
+}
+
+#tScoreV1::before {
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 150%;
+    transform: skew(18deg);
+    background-color: var(--background);
+    box-shadow: -5px -5px var(--accent);
+    z-index: -1;
+    top: -30%;
+    right: -50%;
+}
+
+#tScoreV2 {
+	position: fixed;
+	left: 75%;
+}
+
+#tScoreV2::before {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #b2f252;
+    margin-left: -18%;
+    top: 3px;
+    transform: skew(-18deg);
+}
+
+#tScoreV2::after {
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 150%;
+    transform: skew(-18deg);
+    background-color: var(--background);
+    box-shadow: 5px -5px var(--accent);
+    z-index: -1;
+    top: -30%;
+    left: -50%;
+}
+
+.tScoreT {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: var(--text);
+}
+
+.tScoreC, .tScoreC.you {
+    display: none;
+}
+
+#gameMessage {
+    top: 6%;
+    color: var(--text);
+}
+
+
+/*Top left*/
+#topLeftHolder {
+    left: 10px;
+    top: 10px;
+}
+
+.debugInfo::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 170%;
+    height: 140%;
+    transform: skew(-18deg);
+    left: -30%;
+    bottom: -5%; 
+    background-color: var(--background);
+    box-shadow: 7px 7px var(--accent);
+}
+
+#pingText, #fpsDisplay {
+    color: var(--text) !important;
+}
+
+#pingDisplay, #fpsDisplay, #pingText {
+    font-size: 35px !important;
+}
+
+#pingIcon {
+    transform: scale(1.2);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#fpsDisplay {
+    margin-bottom: 10px;
+}
+
+#curGameInfo, #networkLag {
+    display: none !important;
+}
+
+#voteToKick {
+    background: none;
+    font-size: 25px;
+    margin-left: 50%;
+    margin-top: -45%;
+}
+
+#voteKickName, #voteKickInfo, #voteKickKeys, #voteKickNum {
+    color: var(--text);
+}
+
+#kickVoteY, #kickVoteN {
+    color: var(--chat-msg) !important;
+}
+
+
+/**/
