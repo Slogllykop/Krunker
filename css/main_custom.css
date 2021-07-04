@@ -3292,6 +3292,11 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
 }
 
 .leaderNameF {
+    color: var(--chat-msg);
+    opacity: 0.7;
+}
+
+.leaderName {
     color: var(--text);
 }
 
