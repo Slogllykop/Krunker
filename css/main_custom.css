@@ -3214,7 +3214,7 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     position: absolute;
     z-index: -1;
     width: 170%;
-    height: 140%;
+    height: 200%;
     transform: skew(-4deg, -10deg);
     left: -30%;
     bottom: -13%;
@@ -3270,6 +3270,8 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     border-radius: 0px;
     background: none;
     color: var(--text);
+    transform: skew(4deg, 5deg);
+    margin-top: 3%;
 }
 
 #leaderDisplay::before {
@@ -3277,12 +3279,12 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     content: " ";
     background-color: var(--background);
     width: 120%;
-    height: 200%;
+    height: 300%;
     z-index: -1;
-    transform: skew(4deg, 10deg);
-    bottom: -50%;
+    bottom: -5%;
     right: -15%;
     box-shadow: -7px 7px var(--accent); 
+    transform: unset;
 }
 
 .leaderItem {
