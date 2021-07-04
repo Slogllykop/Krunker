@@ -3326,7 +3326,7 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     position: fixed;
     align-items: flex-end;
     transform: translateY(-50%);
-    bottom: 1%;
+    bottom: 5%;
     right: 0%;
     width: auto !important;
 }
