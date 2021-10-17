@@ -212,6 +212,19 @@ a:hover {
     display: none;
 }
 
+.material-icons-outlined.menBtnIcn {
+    display: none;
+}
+
+.menuItemTitle {
+    font-size: 25px !important;
+    text-align: left;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: 20%;
+}
+
 
 /*Main Logo*/
 #gameNameHolder, #seasonLabel {
