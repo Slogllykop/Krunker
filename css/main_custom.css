@@ -100,6 +100,10 @@ a:hover {
     display: none !important;
 }
 
+.material-icons-outlined[style="font-size:50px;color:#fff;vertical-align:middle;"] {
+    display: none;
+}
+
 /*Loading background*/
 #loadingBg {
     background-image:url(https://cdn.discordapp.com/attachments/778689541535957013/837250864267526194/4qoMkfx.gif);
@@ -635,7 +639,7 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
 }
   
 #menuLvlHold {
-    width: calc(100% - 250px);
+    width: unset;
 }
 
 #menuFPSDisplay {
@@ -652,6 +656,11 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
 
 #signedOutHeaderBar {
     transform: translateX(20px);
+}
+
+.button.buttonO.lgn {
+    border: none !important;
+    text-align: center;
 }
 
 #menuAccountUsername {
@@ -682,6 +691,7 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
 .progressBarInner {
     background-color: var(--accent);
     border-radius: 12px;
+    background-image: unset;
 }
 
 .progressBar {
@@ -763,6 +773,18 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     box-shadow: none !important;
     text-shadow: none;
     transform: scale(1.5) translateX(calc(0% - 3em)) translateY(5px) !important;
+}
+
+.krInfo {
+    margin-left: 1.55em;
+}
+
+#menuJNKCount {
+    color: unset;
+}
+
+#menuJNKCount span {
+    color: var(--accent) !important;
 }
 
 /*Spectate*/
@@ -2664,6 +2686,15 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 input:-internal-autofill-selected {
     background: transparent !important;
+}
+
+.accBtn.button.buttonP, .accBtn.button.buttonG {
+    text-align: center;
+    border: none !important;
+    background: var(--accent) !important;
+    border-radius: 0px;
+    transform: skew(-4deg);
+    color: var(--background) !important;
 }
 
 
