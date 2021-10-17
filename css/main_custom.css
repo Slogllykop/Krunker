@@ -2946,6 +2946,7 @@ div[onclick*="SOUND.play(`select_0`,0.1);claimReward();"], div[onclick*="SOUND.p
     flex-direction: row-reverse;
     width: 70%;
     align-items: flex-start;
+    z-index: -3;
 }
 
 #tradeChatInput::placeholder {
