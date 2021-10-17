@@ -334,6 +334,10 @@ div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(
     transform: skew(-4deg);
 }
 
+#subLogoButtons .button {
+    border: none !important;
+}
+
 
 /*Menu bottom*/
 #hiddenClasses {
