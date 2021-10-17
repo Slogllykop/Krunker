@@ -1405,6 +1405,7 @@ input[type=color] {
 
 .xpBarB {
     background-color: var(--accent) !important;
+    background-image: unset;
 }
 
 .xpBarV {
@@ -1472,6 +1473,24 @@ div[style="font-size:21px;color:rgba(255,255,255,0.4);margin-top:5px"] {
     color: var(--background) !important;
     border-radius: 0px;
     transform: skew(-3deg);
+}
+
+.pSt {
+    font-size: 1em;
+    text-shadow: none !important;
+    background: transparent;
+    border: 2px solid var(--accent);
+    height: 4em;
+    border-radius: 0px;
+    margin: 0.25em;
+    transform: skew(-4deg);
+    box-shadow: -3px 3px var(--accent); 
+    text-transform: unset;
+}
+
+.pSt strong {
+    font-size: 1em;
+    color: var(--chat-msg);
 }
 
 /*DC Fix*/
