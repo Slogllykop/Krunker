@@ -144,6 +144,7 @@ a:hover {
     bottom: 0px;
     font-size: 25px;
     justify-content: space-between;
+    background: none !important;
 }
 
 #menuItemContainer::before {
@@ -227,6 +228,24 @@ a:hover {
 
 .menuItem .menuItemTitle {
     margin-top: 20%;
+}
+
+#menuBtnProfile,#menuBtnShop {
+    font-size:0 !important;
+}
+
+#menuBtnProfile:after,#menuBtnShop:after {
+    font-size:16px !important;
+}
+
+#menuBtnProfile:after {
+    content:'Profile';
+    font-size: 25px !important;
+}
+
+#menuBtnShop:after {
+    content:'Shop';
+    font-size: 25px !important;
 }
 
 
