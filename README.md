@@ -1,3 +1,3 @@
-Krunker Custom Theme - Slog / Slogllykop  <br />
+# Krunker Custom Theme - Slog / Slogllykop 
 
 **CURRENTLY WIP**
