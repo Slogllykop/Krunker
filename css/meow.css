@@ -1,0 +1,2491 @@
+:root {
+  --accent: #35ceff;
+  --bg: #030f1b;
+  --cpc-o: 1;
+  --strm-o: 0;
+  --tint: 0.2;
+  --msg: "Heyy Cutie <3"
+}
+
+#PC7WaterMark,
+#gameNameHolder,
+#seasonLabel,
+#aHider,
+#mapInfoHld,
+#tlInfHold,
+#headerRightSocial,
+.progressBar,
+#mLevelCont,
+#menuMiniProfilePic,
+.junkInfo,
+.junkInfo + .verticalSeparator,
+#NewAltManager > :first-child > div,
+#linkCmdBtn1::before,
+#menuItemContainer .material-icons-outlined,
+.menuItem[onclick*="showAltMng()"],
+#clientExit,
+#bubbleContainer,
+#menuClassNameTag,
+#menuClassIcn,
+#menuClassContainer > [style="display:inline-block;position:relative"],
+#adCon,
+#spectButton > span,
+#termsInfo > :first-child,
+#termsInfo > :first-child + span,
+#termsInfo > .terms[onclick*="TermsofService"],
+#termsInfo > .terms[onclick*="TermsofService"] + span,
+.greyInlineInner:first-child,
+#recTimer,
+#signedOutHeaderBar > :first-child > .button .material-icons,
+#bottomLeftPlayerLeft,
+#bottomLeftTeamHolder,
+#bottomLeftChallIcon,
+#ammoVal ~ *,
+#bhHolder,
+#giftTagHolder,
+#powerUpHolder,
+.weapStreakHolder,
+.weapSkin,
+.weapKey,
+#topLeftMap,
+#timerIcon.topLeftOld,
+.packetInfo,
+#matchInfo > div,
+.statIcon .material-icons,
+.statIcon img,
+.death-column:nth-child(3),
+.death-row-class,
+.death-row-weapon-text,
+.death-row-bottom-bg,
+.death-row-user-stat,
+#uiBase.onDeathScrn #leaderboardHolder,
+#uiBase.onDeathScrn .topRightCounters,
+.endAHolder,
+.spectPIcon,
+#spectHPV,
+#specStatsInner > .flag-icon,
+#specTeam0,
+#specTeam1,
+#uiBase.onSpect #weapHolder,
+.setSugBox2,
+.settingsHeader > :first-child > div[onclick="window.logoutAcc()"],
+.settingsHeader > :first-child > div[onclick="window.gt.showAltMng()"],
+.settingsHeader > :first-child > div[onclick="openOneTrust()"],
+.settingsHeader > :first-child > #settingsPreset,
+.selectorIcon,
+.classHP,
+.carousel {
+    display: none !important
+}
+
+a,
+a:visited,
+a:hover {
+    color: var(--accent) !important;
+    text-decoration: none
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://slogllykop.github.io/Krunker/fonts/Poppins-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url(https://slogllykop.github.io/Krunker/fonts/Poppins-SemiBold.ttf)
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 0
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent)
+}
+
+::-webkit-scrollbar-track {
+    background: none
+}
+
+::selection {
+    background: var(--accent) !important;
+    color: var(--bg) !important
+}
+
+#instructionsFadeBG {
+    z-index: 9999999999999 !important;
+    background: var(--bg)
+}
+
+#instructionsFadeBG::before {
+    content: var(--msg) ", I'm Loading the game...";
+    font-size: 40px;
+    color: var(--accent);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.headerBarLeft {
+    border-radius: 0 !important;
+    bottom: 0; top: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none
+}
+
+.headerBarLeft::after {
+    content: "";
+    position: absolute;
+    left: -2.5%; bottom: 0;
+    height: 110%;
+    width: 55%;
+    z-index: -1;
+    background: var(--accent);
+    transform: skewX(-22deg)
+}
+
+.headerBarLeft::before {
+    content: "";
+    position: absolute;
+    right: -2.5%; bottom: 0;
+    height: 110%;
+    width: 60%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(22deg)
+}
+
+#signedInHeaderBar > :first-child {
+    display: inline-flex !important;
+    margin-right: 80px
+}
+
+#signedOutHeaderBar > :first-child > .button {
+    background: none;
+    border: 0 !important;
+    font-size: 0 !important
+}
+
+#signedOutHeaderBar > :first-child > .button::before {
+    content: "SIGN IN";
+    font-size: 30px;
+    color: var(--bg)
+}
+
+#menuAccountUsername,
+.krInfo {
+    font-size: 25px;
+    vertical-align: unset;
+    margin: unset;
+    color: var(--bg)
+}
+
+#menuKRCount {
+    vertical-align: baseline;
+    color: white
+}
+
+#menuKRCount > span {
+    color: var(--bg) !important
+}
+
+.verticalSeparator {
+    background: rgb(255 255 255 / .25);
+    height: 35px !important;
+    margin: 0 25px !important;
+    transform: rotate(25deg)
+}
+
+#NewAltManager .verticalSeparator {
+    vertical-align: text-bottom !important
+}
+
+#NewAltManager,
+#NewAltManager > :first-child {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%
+}
+
+#NewAltManager > :first-child > span {
+    color: var(--accent) !important
+}
+
+#NewAltManager > :last-child,
+#NewAltManager > :first-child  {
+    margin: 0 !important
+}
+
+#linkCmdBtn1 .material-icons {
+    margin: 0 !important
+}
+
+#NewAltManager .material-icons {
+  font-size: 40px !important
+}
+
+#mailContainer {
+    display: inline-flex;
+    flex-direction: row-reverse
+}
+
+#mailCount {
+    display: block !important;
+    border: 0;
+    background: none;
+    top: unset; right: unset;
+    height: 100%;
+    font-size: 25px;
+    position: relative;
+    line-height: unset;
+    margin-left: 5px
+}
+
+#mailCount::after {
+    content: "Notits";
+    margin-left: 5px
+}
+
+
+#menuItemContainer {
+    top: 60%;
+    background: none;
+    font-size: 25px !important;
+}
+
+#menuItemContainer::after {
+    content: "";
+    height: 110%; width: 110%;
+    background: var(--bg);
+    position: absolute;
+    top: 0; right: 0;
+    z-index: -1;
+    transform: skew(2deg, 22deg)
+}
+
+#menuItemContainer::before {
+    content: "";
+    height: 110%; width: 110%;
+    background: var(--accent);
+    position: absolute;
+    top: 15px; right: -10px;
+    z-index: -1;
+    transform: skew(2deg, 22deg)
+}
+
+.menuItem {
+    align-items: flex-start;
+    padding-left: 15px !important;
+    transform-origin: left
+}
+
+.menuItem:hover {
+    transform: scale(1.125)
+}
+
+.menuItem * {
+    color: var(--accent) !important
+}
+
+.menuItem:nth-child(1) {
+    margin-top: 50px
+}
+
+.menuItemTitle {
+    margin-top: 0 !important
+}
+
+#menuBtnProfile,
+#menuBtnShop,
+#menuBtnChall,
+#menuBtnSettings {
+    font-size: 0 !important
+}
+
+#menuBtnProfile::after {
+    content: "Profile";
+    font-size: 25px
+}
+
+#menuBtnShop::after {
+    content: "Shop";
+    font-size: 25px
+}
+
+#menuBtnChall::after {
+    content: "Chall";
+    font-size: 25px
+}
+
+#menuBtnSettings::after {
+    content: "settings";
+    font-size: 35px;
+    font-family: material icons
+}
+
+.menuItem[onclick*="settings"] {
+    position: absolute;
+    top: 15px
+}
+
+#menuClassContainer {
+    bottom: 70px; right: 50%;
+    z-index: -1 !important;
+    transform: translateX(50%)
+}
+
+#classPreviewCanvas {
+    --w: 500px;
+    margin: 0;
+    width: var(--w) !important;
+    height: calc(var(--w) / 1.25) !important;
+    position: absolute;
+    bottom: -25px; right: 50%;
+    transform: translateX(50%);
+    z-index: -1;
+    opacity: var(--cpc-o) !important
+}
+
+#customizeButton {
+    text-shadow: none !important;
+    font-size: 0 !important;
+    width: 50px;
+    border: none !important;
+    background: none
+}
+
+#customizeButton:hover {
+    transform: none
+}
+
+#customizeButton::after {
+    content: "";
+    position: absolute;
+    left: -2.5%; bottom: 0;
+    height: 110%;
+    width: 55%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(-12deg)
+}
+
+#customizeButton::before {
+    content: "";
+    position: absolute;
+    right: -2.5%; bottom: 0;
+    height: 110%;
+    width: 69%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(12deg)
+}
+
+#customizeButton > span {
+    margin-left: 0 !important;
+    color: var(--accent) !important
+}
+
+#subLogoButtons {
+    transform: none;
+    left: unset; right: 0;
+    top: 60%;
+    bottom: 0;
+    display: flex;
+    width: 130px !important;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+#subLogoButtons::after {
+    content: "";
+    height: 110%; width: 110%;
+    background: var(--bg);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    transform: skew(-2deg, -22deg)
+}
+
+#subLogoButtons::before {
+    content: "";
+    height: 110%; width: 110%;
+    background: var(--accent);
+    position: absolute;
+    top: 15px; left: -10px;
+    z-index: -1;
+    transform: skew(-2deg, -22deg)
+}
+
+#subLogoButtons > * {
+    height: -webkit-fill-available;
+    border: none !important;
+    background: none;
+    transform: translate(10%, 40%);
+    transform-origin: right;
+    color: var(--accent);
+    font-size: 25px !important
+}
+
+#subLogoButtons > :hover {
+    color: var(--accent) !important;
+    transform: translate(10%, 40%) scale(1.1)
+}
+
+#menuBtnHost,
+#menuBtnBrowser {
+    font-size: 0 !important
+}
+
+#menuBtnHost::before {
+    content: "Host";
+    font-size: 25px
+}
+
+#menuBtnBrowser::before {
+    content: "Servers";
+    font-size: 25px
+}
+
+#policeButton > img {
+    opacity: 0
+}
+
+#policeButton::before {
+    content: "KPD";
+    position: absolute;
+    right: 20px;
+    font-size: 25px
+}
+
+#hiddenClasses {
+    display: flex !important;
+    flex-direction: row;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    margin-right: 10px;
+}
+
+#hiddenClasses::after {
+    content: "";
+    position: absolute;
+    left: -2.5%; top: -10px;
+    height: 140%;
+    width: 55%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(22deg)
+}
+
+#hiddenClasses::before {
+    content: "";
+    position: absolute;
+    right: -2.5%; top: -10px;
+    height: 140%;
+    width: 60%;
+    z-index: -1;
+    background: var(--accent);
+    transform: skewX(-22deg)
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_4.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_8.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor:pointer;
+}
+
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_11.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor:pointer;
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor:pointer
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
+    display:block;
+    width:60px;
+    height:60px;
+    content:url(https://assets.krunker.io/textures/classes/icon_13.png?build=uLz7w);
+    pointer-events:auto;
+    image-rendering:pixelated;
+    margin-right:10px
+}
+
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
+    cursor:pointer
+}
+
+
+#headerRight {
+    border-radius: 0;
+    top: 84px; right: 50%;
+    transform: translateX(50%);
+    background: none
+}
+
+#headerRight::after {
+    content: "";
+    position: absolute;
+    left: -2.5%; top: 0;
+    height: 100%;
+    width: 70%;
+    z-index: -2;
+    background: var(--accent);
+    transform: skewX(22deg)
+}
+
+
+#headerRight::before {
+    content: "";
+    position: absolute;
+    right: -2.5%; top: 0;
+    height: 100%;
+    width: 55%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(-22deg)
+}
+
+
+#menuServerInfoContainer {
+    flex-direction: row;
+    gap: 1em;
+    align-items: center
+
+}
+
+#menuRegionLabel {
+    padding-right: 1.25em;
+    color: var(--bg)
+}
+
+#menuPingDisplay,
+#menuFPSDisplay,
+#menuPingText {
+    color: var(--accent);
+    display: flex;
+    align-items: center
+}
+
+#menuRegionLabel,
+.menuDebugInfo * {
+    font-size: 25px !important
+}
+
+
+#uiBase.onMenu #spectButton {
+    top: 160px
+}
+
+.switchsml {
+    width: 200px;
+    text-align: center
+}
+
+.sliderSml {
+    background: none !important
+}
+
+.sliderSml::before {
+    transform: none !important;
+    content: "Spectating OFF";
+    color: white;
+    background: none;
+    font-size: 25px;
+    width: 100%
+}
+
+input:checked+.sliderSml::before {
+    content: "Spectating ON"
+}
+
+#instructions {
+    font-size: 0;
+    animation: none
+}
+
+#instructions::before {
+    content: var(--msg);
+    font-size: 30px
+}
+
+#instructionHolder::after {
+    content: "";
+    width: 100%; height: 100%;
+    background: var(--accent) !important;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    opacity: var(--tint)
+}
+
+#streamContainer {
+    background: var(--bg);
+    top: 0; right: 0;
+    opacity: var(--strm-o)
+}
+
+#streamContainer::before {
+    content: "";
+    background: var(--accent);
+    width: 150%; height: 100%;
+    position: absolute;
+    top: -60%; right: -60%;
+    z-index: -1;
+    transform: rotate(45deg)
+}
+
+#streamContainer::after {
+    content: "";
+    background: none;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    box-shadow: -10px 10px 0 0 var(--accent)
+}
+
+.strmCat {
+    text-shadow: none;
+    font-size: 25px;
+    width: -webkit-fill-available;
+    text-align: center
+}
+
+.streamItem {
+    display: flex;
+    gap: 15px;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-bottom: 7px
+}
+
+.streamName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+.strmLink {
+    text-shadow: none;
+    font-size: 20px
+}
+
+.strmViews {
+    font-size: 15px
+}
+
+#termsInfo {
+    background: none;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+#termsInfo::after {
+    content: "";
+    position: absolute;
+    left: -2.5%; bottom: 0;
+    height: 140%;
+    width: 50%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(-22deg)
+}
+
+#termsInfo::before {
+    content: "";
+    position: absolute;
+    right: -2.5%; bottom: 0;
+    height: 140%;
+    width: 65%;
+    z-index: -1;
+    background: var(--accent);
+    transform: skewX(22deg)
+}
+
+#termsInfo > * {
+    font-size: 25px;
+    text-decoration: none
+}
+
+.terms[onclick*="windows[20]"] {
+    color: var(--accent)
+}
+
+.terms[onclick*="showWindow(35)"] {
+    color: var(--bg)
+}
+
+#mapInfoHolder {
+    right: calc(130px + 2.5em)
+}
+
+#termsInfo > .verticalSeparatorInline {
+    border-left: 4px solid rgb(255 255 255 / .25);
+    height: 35px;
+    transform: rotate(25deg) translateY(-7px);
+    margin: 0 10px
+}
+
+#uiBase.onMenu #chatHolder {
+    bottom: 0; left: calc(130px + 4.5em);
+    max-width: 413px
+}
+
+#chatInputHolder {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background: none;
+    position: relative
+}
+
+#chatInputHolder::after {
+    content: "";
+    position: absolute;
+    left: -2.5%;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    background: var(--accent);
+    transform: skewX(-22deg)
+}
+
+#chatInputHolder::before {
+    content: "";
+    position: absolute;
+    right: -2.5%;
+    height: 100%;
+    width: 70%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(22deg)
+}
+
+.greyInlineInner {
+    display: inline-flex;
+    align-items: center    
+}
+
+.greyInlineInnerMid {
+    flex: 1
+}
+
+.greyInner, .greyInlineInner, .greyInlineInnerMid {
+    background: none
+}
+
+#chatInput {
+    width: 325px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid white
+}
+
+#chatInput::placeholder {
+    color: white !important
+}
+
+#voiceIcon {
+    color: var(--bg)
+}
+
+#chatList {
+    margin-bottom: 1em;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1 !important;
+    background-color: var(--bg) !important;
+    border-left: 7px solid var(--accent);
+    border-right: 7px solid var(--accent)
+}
+
+.chatItem {
+    background-color: transparent !important;
+    font-size: 20px;
+    user-select: text !important;
+    color: var(--accent)
+}
+
+#chatList::-webkit-scrollbar-thumb {
+    background: none
+}
+
+.chatMsg {
+    color: white;
+    user-select: text
+}
+
+
+/* INGAME UI */
+
+/* #fullMenHider {
+    display: none !important
+} */
+
+/* #inGameUI { */
+/* #spectateUI {
+    display: block !important;
+}
+
+.headerBarRight,
+#hiddenClasses {
+    display: none !important
+} */
+
+#bottomLeftHolder {
+    width: 100%;
+    left: 0; bottom: 0;
+}
+
+#bottomLeftPlayer {
+    display: inline;
+    background: none;
+}
+
+#bottomLeftPlayerMid {
+    width: 500px;
+    display: block;
+    position: absolute;
+    left: 50%; bottom: 5px;
+    z-index: 1;
+    transform: translateX(-50%)
+}
+
+#bottomLeftHealthBar {
+    background: none;
+    gap: 0
+}
+
+#bottomLeftHealthBar::before {
+    content: "";
+    width: 50%;
+    height: 140%;
+    position: absolute;
+    background: var(--bg);
+    z-index: -1;
+    top: -10px; left: -2.5%;
+    transform: skewX(-22deg);
+    border-left: 6px solid var(--accent)
+}
+
+#bottomLeftHealthBar::after {
+    content: "";
+    width: 80%;
+    height: 140%;
+    position: absolute;
+    background: var(--bg);
+    z-index: -1;
+    top: -10px; right: -2.5%;
+    transform: skewX(22deg);
+    border-right: 6px solid var(--accent)
+}
+
+.nHealthBarSeg {
+    margin: 0 -1px;
+    background-color: transparent;
+    position: relative
+}
+
+.nHealthBarSeg:first-child::before {
+    content: "";
+    width: 10px; height: 30px;
+    background: var(--bg);
+    position: absolute;
+    transform: rotate(22deg) translate(-50%, -2px)
+}
+
+.nHealthBarSeg:last-child::before {
+    content: "";
+    width: 10px; height: 30px;
+    background: var(--bg);
+    position: absolute; right: 0;
+    transform: rotate(-22deg) translate(50%, -2px)
+}
+
+.nHpBSeg {
+    border-radius: 0;
+    color: var(--accent) !important;
+    background-color: var(--accent) !important
+}
+
+#bottomLeftPlayerRight {
+    background: none;
+    width: 100%;
+    position: absolute;
+    top: -5px; left: 0;
+    height: 35px;
+    padding: 0;
+    margin: 0
+}
+
+#bottomLeftHealth {
+    position: absolute;
+    left: 50%; bottom: 0;
+    font-size: 35px;
+    text-align: right;
+    transform: translateX(calc(-50% - 315px))
+}
+
+#bottomLeftHealth::before {
+    content: "";
+    width: 350%; height: 110%;
+    z-index: -1;
+    position: absolute;
+    background: var(--bg);
+    top: -5px; left: -25px;
+    transform: skewX(-22deg);
+    border-left: 5px solid var(--accent)
+}
+
+#bottomRight {
+    width: 100%;
+    right: 0;
+    bottom: 0; height: 80px
+}
+
+#krTagHolder {
+    transform: translate(-200px, -75px)
+}
+
+#ammoHolder {
+    position: fixed;
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--accent), var(--accent));
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    font-size: 35px;
+    display: inline !important;
+    width: 475px;
+    height: 7px;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 0
+}
+
+#ammoVal {
+    position: absolute;
+    text-align: left;
+    transform: translate(285px, 20px)
+}
+
+#ammoVal::before {
+    content: "";
+    width: 400%; height: 110%;
+    position: absolute;
+    right: -25px; top: 0;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(22deg);
+    border-right: 5px solid var(--accent)
+}
+
+#killStreakHolder {
+    position: absolute;
+    right: calc(50% - 250px);
+    bottom: calc(100% + 5px)
+}
+
+#weapHolder {
+    right: 50%; bottom: 75px;
+    transform: translateX(50%);
+    display: flex !important;
+    width: 150px; height: 100px
+}
+
+.weapItem {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%; transform: translateX(-50%) scale(0);
+    transform-origin: center;
+    opacity: 0 !important
+}
+
+.weapItemInner {
+    background: none;
+    margin: 0;
+    padding: 0;
+    display: flex !important
+}
+
+.weapItem[style*="1"] {
+    opacity: 1 !important;
+    transform: translateX(-50%) scale(1);
+    filter: brightness(0)
+            drop-shadow(-2px 0px 1px var(--accent)) 
+            drop-shadow(2px 0px 1px var(--accent));
+    transition-duration: 250ms
+}
+
+
+#uiBase.onGame #chatHolder {
+    bottom: 0; left: 2em
+}
+
+#topLeftHolder {
+    width: 100%;
+    left: 0; top: 0
+}
+
+#topLeftMatchData,
+#topLeftMain {
+    width: 100%
+}
+
+#topLeftHolder > * {
+    position: absolute
+}
+
+#timerHolder {
+    background: none !important;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+    padding: 10px 20px
+}
+
+#timerHolder.topLeftOld {
+    text-align: center !important;
+    padding: unset
+}
+
+#timerInner.topLeftOld {
+    background: none
+}
+
+#timerHolder::before {
+    content: "";
+    width: 70%; height: 100%;
+    position: absolute;
+    bottom: 0; left: -3%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(22deg);
+    border-left: 5px solid var(--accent)
+}
+
+#timerHolder::after {
+    content: "";
+    width: 70%; height: 100%;
+    position: absolute;
+    bottom: 0; right: -3%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(-22deg);
+    border-right: 5px solid var(--accent)
+}
+
+#timerVal {
+    font-size: 35px !important;
+    color: var(--accent)
+}
+
+#topLeftData {
+    width: unset
+}
+
+.debugInfo {
+    text-align: left;
+    display: flex;
+    gap: 1em;
+    margin-left: 3em
+}
+
+.debugInfo::before {
+    content: "";
+    width: 70%; height: 100%;
+    position: absolute;
+    bottom: 0; left: 10%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(22deg);
+    border-left: 5px solid var(--accent)
+}
+
+.debugInfo::after {
+    content: "";
+    width: 70%; height: 100%;
+    position: absolute;
+    bottom: 0; right: -10%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(-22deg);
+    border-right: 5px solid var(--accent)
+}
+
+#fpsDisplay,
+#pingDisplay,
+#pingText {
+    font-size: 25px !important;
+    color: var(--accent)
+}
+
+#matchInfo,
+#matchInfo.topLeftOld {
+    position: fixed;
+    margin-left: 14%;
+    text-shadow: none;
+    font-size: 20px !important
+}
+
+#matchInfo::after {
+    content: " - Slog ♥"
+}
+
+#topLeftBottom {
+    margin: 50px 0 0 15px
+}
+
+#topRight {
+    display: flex !important;
+    bottom: 0; right: 0;
+    top: unset;
+    flex-direction: column-reverse;
+    align-items: flex-end
+}
+
+#leaderboardHolder {
+    margin: 0;
+    width: 400px;
+    font-size: 25px !important;
+    border-radius: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    background-color: var(--bg)
+}
+
+#leaderContainer {
+    background: none;
+    color: var(--accent)
+}
+
+.leaderItem {
+    font-size: 25px
+}
+
+.leaderItem > * {
+    color: white
+}
+
+.leaderNameM {
+    color: var(--accent) !important
+}
+
+.leaderNameF {
+    color: rgb(255 255 255 / .65) !important
+}
+
+leaderName {
+    color: white !important
+}
+
+.leaderName > span,
+.leaderNameF > span,
+.leaderNameM > span {
+    opacity: .5;
+    font-size: 15px
+}
+
+.topRightCounters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10em
+}
+
+.statIcon {
+    font-size: 25px;
+    background: var(--bg);
+    border-left: 6px solid var(--accent);
+    max-width: 200px;
+    width: -webkit-fill-available
+}
+
+.statIcon span {
+    color: white !important;
+}
+
+#scoreZoneVal::after {
+    content: "Flag";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#livesDisp::after {
+    content: "Lives";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#killsVal::after {
+    content: "Kills";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#deathsVal::after {
+    content: "Deaths";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#streakVal::after {
+    content: "Streak";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#kdVal::after {
+    content: "KDR";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+#myScoreVal::after {
+    content: "Score";
+    margin-left: 10px;
+    color: var(--accent)
+}
+
+.death-ui-holder,
+.death-ui-bottom {
+    z-index: 999999999999 !important;
+    background: var(--bg)
+}
+
+.death-ui-bottom {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    animation: none
+}
+
+.death-column {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.death-row-bottom {
+    display: flex;
+    justify-content: center;
+    filter: none;
+    background: none !important;
+    outline: none;
+    width: 400px;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    margin-bottom: 10px
+}
+
+.death-row-user {
+    font-size: 35px
+}
+
+.death-row-user-text {
+    color: var(--accent)
+}
+
+.death-row-left,
+.death-row-right {
+    display: flex;
+    width: 300px;
+    border-right: 5px solid var(--accent);
+    margin-left: 2em;
+    justify-content: space-between
+}
+
+.death-row-weapon {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.death-row-left {
+    flex-direction: row-reverse
+}
+
+.death-stats {
+    position: absolute;
+    top: 20px; left: calc(50% + 450px);
+    row-gap: 18px
+}
+
+.death-stats-row {
+    filter: none;
+    font-size: 25px
+}
+
+.death-stats-row > span {
+    color: white !important
+}
+
+.death-stats-row:nth-child(3) > span {
+    color: var(--accent) !important
+}
+
+#uiBase.onDeathScrn #chatHolder {
+    left: 35px;
+    bottom: 340px;
+    animation: none
+}
+
+#uiBase.onDeathScrn #chatList {
+    max-height: 360px !important
+}
+
+#teamScores {
+    background: var(--bg);
+    border-radius: 0;
+    margin-top: 10px;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    padding: 20px 30px
+}
+
+.tScore:first-child {
+    margin-bottom: 1em
+}
+
+#networkLagHed,
+.tScoreT {
+    font-size: 25px;
+    margin: 0 10px;
+    color: var(--accent) !important
+}
+
+#networkLag,
+#voteToKick,
+#voteToForfeit {
+    background: var(--bg);
+    border-radius: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    font-size: 20px
+}
+
+#networkLag > :not(:first-child),
+#voteToForfeit > *,
+#voteToKick > * {
+    color: white !important
+}
+
+#networkLag {
+    width: unset
+}
+
+#voteForfeitKeys > span,
+#kickVoteY,
+#kickVoteN {
+    color: var(--accent) !important
+}
+
+#voteHeader {
+    background: none;
+    font-size: 25px;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent)
+}
+
+#gameMessage {
+    font-size: 35px;
+    position: absolute;
+    top: 25px;
+    right: 0
+}
+
+#roundsDisplay {
+    background: none
+}
+
+.roundScrV {
+    margin: 0 25px;
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    height: unset;
+    position: relative;
+    background: none
+}
+
+#roundTSc1,
+#roundTSc2 {
+    border: 0 !important;
+}
+
+#roundTSc1::before {
+    content: "";
+    height: 100%; width: 200%;
+    position: absolute;
+    bottom: 0; left: -2.5%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(22deg);
+    border-left: 10px solid #eb4034
+}
+
+#roundTSc2::before {
+    content: "";
+    height: 100%; width: 200%;
+    position: absolute;
+    bottom: 0; right: -2.5%;
+    background: var(--bg);
+    z-index: -1;
+    transform: skewX(-22deg);
+    border-right: 10px solid #3489eb
+}
+
+#roundsDisplay > :nth-child(2) {
+    visibility: hidden !important
+}
+
+#topMidHold {
+    top: -25px
+}
+
+#uiBase.onEndScrn #chatHolder {
+    bottom: 0; left: 30px
+}
+
+#uiBase.onEndScrn #mapInfoHolder {
+    right: 50%;
+    transform: translateX(50%)
+}
+
+#specControlHolder {
+    top: 0; bottom: unset; right: 0;
+    background: var(--bg);
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    isolation: isolate;
+    overflow: hidden;
+    border-radius: 0
+}
+
+#specControlHolder::before {
+    content: "";
+    height: 100%; width: 100%;
+    position: absolute;
+    background: var(--accent);
+    z-index: -1;
+    transform: rotate(-22deg);
+    top: 30%; left: -83%
+}
+
+.specControl[style*="color: rgb(251, 192, 45);"] { 
+    color: var(--accent) !important;
+    font-size: 25px
+}
+
+.specControl[style*="color: rgb(251, 192, 45);"] + hr {
+    border-top: 2px solid var(--accent) !important
+}
+
+.specControl {
+    color: white;
+    font-size: 18px
+}
+
+.specControlKey {
+    color: var(--accent)
+}
+
+#specStats.topLeftOld,
+#specStats {
+    top: 0; left: 0;
+    background: var(--bg);
+    border-radius: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent)
+}
+
+#specStatsInner {
+    background: none;
+    font-size: 25px
+}
+
+#specStatsInner > div {
+    width: -webkit-fill-available !important;
+}
+
+.specLevelBox {
+    font-size: 30px;
+    background: none;
+    color: var(--accent) !important;
+    padding: 0 20px;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.specPHead {
+    font-size: 25px;
+    padding: 0 20px;
+    margin: -10px 5px 0 12px
+}
+
+#spectHPB {
+    width: -webkit-fill-available;
+    background: none;
+    margin: 10px 7px 5px 7px;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+#spectHPBI {
+    background: var(--accent) !important
+}
+
+#specNames.topLeftOld,
+#specNames {
+    top: 0 !important; left: 0;
+    padding: 25px;
+    font-size: 30px;
+    background: var(--bg);
+    border-radius: 0;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+#specSUS {
+    top: 120px; left: 0;
+    background: var(--bg);
+    border-radius: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+#specKPDContr {
+    border-radius: 0;
+    background: var(--bg);
+    font-size: 25px;
+    color: white !important;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.specKPDContrI {
+    color: var(--accent) !important
+}
+
+.specKPDContrI > span {
+    color: white
+}
+
+#spectateHUD {
+    top: 0
+}
+
+#specTimer {
+    border-radius: 0;
+    background: none;
+    font-size: 40px;
+    position: relative;
+    z-index: 1
+}
+
+#specTimer::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; left: -2.5%;
+    width: 60%; height: 150%;
+    transform: skewX(22deg);
+    background: var(--bg);
+    z-index: -1;
+    border-left: 5px solid var(--accent)
+}
+
+#specTimer::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; right: -2.5%;
+    width: 70%; height: 150%;
+    transform: skewX(-22deg);
+    z-index: -1;
+    background: var(--bg);
+    border-right: 5px solid var(--accent)
+}
+
+#specGameInfo {
+    color: white !important;
+    text-shadow: none;
+    font-size: 35px;
+    margin-top: 25px
+}
+
+#specHeaderTm0,
+#specHeaderTm1 {
+    background: none;
+    clip-path: none;
+    position: relative
+}
+
+#specHeaderTm0::before {
+    content: "";
+    width: 150%; height: 100%;
+    position: absolute;
+    bottom: 0; left: -2.5%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(22deg);
+    border-left: 10px solid #5699eb
+}
+
+#specHeaderTm1::before {
+    content: "";
+    width: 150%; height: 100%;
+    position: absolute;
+    bottom: 0; right: -2.5%;
+    z-index: -1;
+    background: var(--bg);
+    transform: skewX(-22deg);
+    border-right: 10px solid #eb5656
+}
+
+#specNameTm0,
+#specNameTm1 {
+    font-size: 25px;
+    color: var(--accent)
+}
+
+#reloadMsg {
+    font-size: 0;
+    bottom: 15%;
+    border: none;
+    color: var(--accent);
+    background: var(--bg);
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+#reloadMsg::after {
+    font-size: 25px !important;
+    content: "Reload"
+}
+
+#menuWindow {
+    background: var(--bg) !important;
+    border-left: 10px solid var(--accent);
+    border-right: 10px solid var(--accent)
+}
+
+#settingsTabLayout,
+.settingsHeader {
+    background: none;
+    border-radius: 0
+}
+
+.settingsHeader {
+    background: var(--bg)
+}
+
+.settingsBtn {
+    border-radius: 0;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    color: var(--accent) !important
+}
+
+.settingsBtn:hover {
+    color: white !important
+}
+
+#settSearch {
+    border-radius: 0 !important;
+    background: none;
+    border-bottom: 3px solid var(--accent);
+    color: var(--accent);
+    font-size: 20px
+}
+
+#settSearch::placeholder {
+    color: var(--accent)
+}
+
+.settingTab {
+    background: none;
+    border-top: 5px solid var(--accent)
+}
+
+.settingTab:hover {
+    border-bottom: 0
+}
+
+.settingTab.tabANew,
+.settingTab.tabANew:hover {
+    border-bottom: 5px solid var(--accent) !important;
+    color: var(--accent) !important
+}
+
+.setHed {
+    background: none;
+    border: 0;
+    font-size: 40px;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    color: var(--accent) !important
+}
+
+.setHed:hover,
+.setBodH {
+    background: none
+}
+
+.settName,
+.settNameSmall {
+    font-size: 25px;
+    border-bottom: 3px solid var(--accent);
+    color: white !important
+}
+
+#requiresRestart {
+    font-size: 20px;
+    color: white
+}
+
+.inputGrey2 {
+    border-radius: 0;
+    font-size: 20px;
+    background: none;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.inputGrey2::placeholder {
+    color: var(--accent)
+}
+
+.sliderVal {
+    border-radius: 0;
+    border: 3px solid var(--accent) !important;
+    background: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: var(--accent)
+}
+
+.slidecontainer {
+    width: 300px
+}
+
+.sliderM {
+    border-radius: 0;
+    background: var(--accent);
+    height: 5px
+}
+
+.sliderM::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent)
+}
+
+.slider:before {
+    position: absolute;
+    content: "OFF";
+    line-height: 25px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0; bottom: 0;
+    color: white;
+    background-color: transparent !important;
+    font-size: 23px
+}
+
+input:checked+.slider:before {
+    transform: unset;
+    content: "ON";
+    font-size: 30px;
+    color: var(--accent);
+    overflow: hidden
+}
+
+input:checked+.slider,
+.slider {
+    background: none
+}
+
+input[type=color] {
+    border-radius: 0;
+    width: 50px;
+    height: 30px;
+    border: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent)
+}
+
+.openCollection {
+    background: none !important;
+    color: var(--accent) !important;
+    font-size: 30px !important
+}
+
+.settings-desc {
+    color: var(--accent) !important
+}
+
+.button {
+    border-radius: 0;
+    background: none;
+    border: 3px solid var(--accent) !important;
+    color: var(--accent) !important
+}
+
+.button:hover {
+    border: 3px solid var(--accent) !important;
+    transform: none
+}
+
+#referralHeader {
+    background: none;
+    color: var(--accent) !important;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent)
+}
+
+.accountInput {
+    background: none;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
+    text-align: center
+}
+
+.accountInput::placeholder {
+    color: var(--accent)
+}
+
+[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"] {
+    background: none !important
+}
+
+#selectorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg)
+}
+
+#accResp {
+    color: var(--accent) !important
+}
+
+.selectorItem {
+    height: 40px;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    margin-top: 10px
+}
+
+.selectorItem:hover {
+    background: none
+}
+
+.selectedItem {
+    border-radius: 0;
+    border: 3px solid var(--accent) !important
+}
+
+.selectedItem  > .selectorLabel {
+    color: var(--accent) !important
+}
+
+.formInput {
+    border-radius: 0;
+    font-size: .95rem;
+    background: none !important;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent) !important
+}
+
+.formInput::placeholder {
+    color: var(--accent)
+}
+
+#loadoutSelect {
+    border-radius: 0;
+    font-size: 1rem;
+    background: none;
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+}
+
+.loadoutBtn {
+    border-radius: 0;
+    font-size: 1rem;
+    background: none;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    color: var(--accent) !important
+}
+
+.custContainer {
+    width: -webkit-fill-available !important;
+    border: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    background: none
+}
+
+.custContainer * {
+    font-size: 20px
+}
+
+.custContainer .settLabel {
+    color: var(--accent) !important
+}
+
+.custSubContainer {
+    border: 0;
+    border-left: 3px solid var(--accent);
+    background: none
+}
+
+#itemSearchH {
+    background: none
+}
+
+.winClose,
+.custBack {
+    border-radius: 0;
+    background: none;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.winSelH,
+#itemSearch {
+    width: 725px;
+    background: none;
+    color: var(--accent);
+    border: 0;
+    border-bottom: 3px solid var(--accent)
+}
+
+#itemSearch::placeholder {
+    color: var(--accent)
+}
+
+.streakCard,
+.noBtnCard,
+.skinCard {
+    border-radius: 0;
+    border: 5px solid var(--accent) !important;
+    background: none;
+    text-shadow: none !important;
+    color: var(--accent) !important
+}
+
+.winClose:hover,
+.custBack:hover,
+.streakCard:hover,
+.noBtnCard:hover,
+.skinCard:hover {
+    background: none
+}
+
+.custClear,
+.selctDelBtn {
+    background: var(--accent);
+    color: var(--bg) !important;
+    border-radius: 0
+}
+
+.custClear > .material-icons{
+    color: var(--bg) !important
+}
+
+.classCard {
+    border-radius: 0;
+    background: none;
+    border: 3px solid var(--accent);
+    width: -webkit-fill-available;
+    text-shadow: none;
+    font-size: 30px
+}
+
+.className,
+.classWeap {
+    text-shadow: none;
+    font-size: 25px
+}
+
+.className {
+    color: var(--accent) !important
+}
+
+.classLvl {
+    top: 0; right: 15px;
+    font-size: 30px;
+    color: var(--accent) !important;
+    text-shadow: none;
+    left: unset
+}
+
+.classXPBar {
+    background: none;
+    border: 3px solid var(--accent)
+}
+
+.clsXPBarC {
+    background: var(--accent)
+}
+
+.clsXPBarV {
+    font-size: 20px;
+    text-shadow: none;
+    top: -110%
+}
+
+.bigMenTabs {
+    background: none;
+    border-radius: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between
+}
+
+.bigMenTab,
+.bigMenTab:hover {
+    width: -webkit-fill-available;
+    font-size: 20px !important;
+    border: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.bigMenTabA {
+    color: var(--accent) !important;
+    border: 3px solid var(--accent)
+}
+
+.bigMenTabA:hover {
+    border: 3px solid var(--accent)
+}
+
+.bigMenTab .material-icons {
+    color: var(--accent) !important
+}
+
+#profilePicM,
+.pfpAction {
+    border-radius: 0;
+    border: 0
+}
+
+.smlInput {
+    background: none;
+    border-radius: 0;
+    border-bottom: 3px solid var(--accent);
+    font-size: 25px;
+    color: var(--accent)
+}
+
+.smlInput::placeholder {
+    color: var(--accent)
+}
+
+.clanSubmitBtn {
+    border-radius: 0;
+    background: none;
+    font-size: 25px;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+.clanSubmitBtn:hover {
+    background: none;
+    transform: none
+}
+
+#clanErr {
+    font-size: 25px;
+    color: white !important
+}
+
+.xpBar {
+    background: none;
+    border: 5px solid var(--accent);
+    border-radius: 0
+}
+
+.xpBarB {
+    background: var(--accent)
+}
+
+.xpBarV {
+    font-size: 25px;
+    text-shadow: none;
+    top: -110%
+}
+
+.statTabB0,
+.statTabB1,
+.statTabB2,
+.statTabB3 {
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+
+.pSt {
+    width: -webkit-fill-available !important;
+    background: none;
+    border-radius: none;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px !important;
+    text-shadow: none !important;
+    border-radius: 0 !important
+}
+
+.pSt > strong {
+    font-size: 25px;
+    color: var(--accent)
+}
+
+.statTabB1 .pSt[style*="padding-right: 0px"] {
+    padding: 5px 10px !important
+}
+
+.hide {
+    display: none !important
+}
+
+.statTabB0 > .pSt:nth-child(2),
+.statTabB0 > .pSt:nth-child(9),
+.statTabB0 > .pSt:nth-child(25),
+.statTabB1 > .pSt:nth-child(1) {
+    color: var(--accent) !important
+}
+
+.clsStatCard {
+    width: -webkit-fill-available;
+    background: none;
+    border-radius: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    text-shadow: none;
+    height: 100px
+}
+
+.clsStatImg {
+    border-radius: 0;
+    background: none;
+    width: 100px
+}
+
+.clsStatName,
+.clsStatWeap {
+    font-size: 20px;
+    margin-left: 40px;
+    top: 40px;
+    color: var(--accent) !important
+}
+
+.clsStatName {
+    top: 0;
+    color: white !important
+}
+
+.clsStatXPBar {
+    top: unset; bottom: 3px; left: 120px;
+    width: 490px;
+    background: none;
+    border: 3px solid var(--accent);
+    border-radius: 0
+}
+
+.clsStatXPBarC {
+    background: var(--accent)
+}
+
+.clsStatXPBarV {
+    text-shadow: none;
+    font-size: 15px;
+    top: -110%
+}
+
+.clsStatLvl {
+    top: 0;
+    left: unset; right: 0;
+    font-size: 20px
+}
+
+#statHolder + [style*="rgba(255, 255, 255, 0.8)"] {
+    border-top: 5px solid var(--accent) !important
+}
+
+.menuLink {
+    font-size: 30px
+}
+
+#plySearch {
+    border-radius: 0;
+    font-size: 20px;
+    background: none;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent)
+}
+
+#plySearch::placeholder {
+    color: var(--accent)
+}
+
+.pListTable {
+    background: none
+}
+
+tr {
+    border-bottom: 2px solid var(--accent)
+}
+
+.punishButton,
+.pListActions * {
+    border-radius: 0;
+    border: 0;
+    text-shadow: none
+}
+
+.pListName * {
+    font-size: 25px !important
+}
+
+
+a > [style="color:#353535"] {
+    font-size: 1rem !important;
+    color: white !important
+}
+
+.setHed > center {
+    color: var(--accent)
+}
+
+.pListName {
+    font-size: 25px;
+    color: white
+}
+
+.pListName i {
+    margin-right: 10px
+}
+
+.twitchPop, .nftPop, .confPop, .clientExitPop, #confPurchItemPop {
+    border-radius: 0;
+    border: 5px solid var(--accent);
+    background: var(--bg)
+}
+
+#genericPop > * {
+    font-size: 20px !important;
+    text-align: center
+}
+
+.takeActionBtn {
+    border-radius: 0;
+    font-size: 20px
+}
+
+#shopSideSellB,
+#shopMainSellB {
+    border-radius: 0;
+    border: 5px solid var(--accent)
+}
+
+.bundleSliderBtn {
+    background: var(--bg) !important;
+    border-radius: 0;
+    border: 5px solid var(--accent) !important
+}
+
+.bundleSliderArrow {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--accent)
+}
+
+.shopCard {
+    border-radius: 0
+}
+
+#shopHeader + .setBodH > [style*="rgba(255,255,255,0.6)"] {
+    font-size: 25px;
+    color: var(--accent) !important
+}
+
+.serverHeader {
+    background: var(--bg)
+}
+
+#serverSearch {
+    border-radius: 0;
+    background: none;
+    font-size: 20px;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent)
+}
+
+#serverSearch::placeholder {
+    color: var(--accent)
+}
+
+.serverTimeLeft {
+    font-size: 20px
+}
