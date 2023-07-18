@@ -128,6 +128,14 @@ a:hover {
     transform: translate(-50%, -50%)
 }
 
+#instructionsFadeBG::after {
+    content: url(https://media.tenor.com/nthqT6mfB5gAAAAj/hearts-love.gif);
+    position: absolute;
+    bottom: -10px; left: 50%;
+    transform-origin: bottom;
+    transform: translateX(calc(-50% - 20px)) scale(2)
+}
+
 .headerBarLeft {
     border-radius: 0 !important;
     bottom: 0; top: unset;
@@ -2506,4 +2514,19 @@ a > [style="color:#353535"] {
 
 .serverTimeLeft {
     font-size: 20px
+}
+
+#uiBase.onMenu::before {
+    content: url(https://media.tenor.com/6fa6sool-Y4AAAAj/love-pat.gif);
+    position: fixed;
+    top: 0; left: -7px;
+    transform: scale(1.1);
+    z-index: 1
+}
+
+#bottomLeftHealth::after {
+    position: absolute;
+    content: url(https://media.tenor.com/Nt17bFLryGYAAAAj/love-cat.gif);
+    bottom: -10px; right: 110%;
+    filter: brightness(1.4)
 }
