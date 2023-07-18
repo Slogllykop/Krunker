@@ -74,7 +74,8 @@
 .settingsHeader > :first-child > #settingsPreset,
 .selectorIcon,
 .classHP,
-.carousel {
+.carousel,
+#uiBase.onDeathScrn .weapItem {
     display: none !important
 }
 
@@ -972,7 +973,7 @@ input:checked+.sliderSml::before {
     display: none !important
 } */
 
-/* #inGameUI { */
+/* #inGameUI { display: block !important} */
 /* #spectateUI {
     display: block !important;
 }
@@ -1414,6 +1415,23 @@ leaderName {
 .death-column {
     display: flex;
     flex-direction: row-reverse
+}
+
+.death-ui-bottom-empty .death-column {
+    flex-direction: row;
+    gap: 1rem
+}
+
+.death-ui-bottom-empty .death-column .death-row-center-self {
+    color: var(--accent);
+    filter: none
+}
+
+.death-ui-bottom-empty {
+    background: var(--bg);
+    border-left: 10px solid var(--accent);
+    border-right: 10px solid var(--accent);
+    animation: none
 }
 
 .death-row-bottom {
