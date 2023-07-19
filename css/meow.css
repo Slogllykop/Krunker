@@ -75,7 +75,10 @@
 .selectorIcon,
 .classHP,
 .carousel,
-#uiBase.onDeathScrn .weapItem {
+#uiBase.onDeathScrn .weapItem,
+.endTablePfp,
+.endTableFlag,
+#doubleXPHolder > img {
     display: none !important
 }
 
@@ -83,7 +86,7 @@ a,
 a:visited,
 a:hover {
     color: var(--accent) !important;
-    text-decoration: none
+    text-decoration: none !important
 }
 
 @font-face {
@@ -869,6 +872,13 @@ input:checked+.sliderSml::before {
     color: var(--accent)
 }
 
+.terms[onclick*="windows[20]"]::before {
+    content: url(https://media.tenor.com/zUkO0Uysaf4AAAAj/mochi-peach.gif);
+    position: absolute;
+    bottom: 100%; left: 75px;
+    z-index: -2
+}
+
 .terms[onclick*="showWindow(35)"] {
     color: var(--bg)
 }
@@ -908,6 +918,15 @@ input:checked+.sliderSml::before {
     transform: skewX(-22deg)
 }
 
+#uiBase.onGame #chatInputHolder::after {
+    background: var(--bg);
+    border-left: 3px solid var(--accent)
+}
+
+#uiBase.onGame #chatInputHolder::before {
+    border-right: 3px solid var(--accent)
+}
+
 #chatInputHolder::before {
     content: "";
     position: absolute;
@@ -940,12 +959,25 @@ input:checked+.sliderSml::before {
     border-bottom: 3px solid white
 }
 
+#uiBase.onGame #chatInput {
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent)
+}
+
 #chatInput::placeholder {
     color: white !important
 }
 
+#uiBase.onGame #chatInput::placeholder {
+    color: var(--accent) !important
+}
+
 #voiceIcon {
     color: var(--bg)
+}
+
+#uiBase.onGame #voiceIcon {
+    color: var(--accent)
 }
 
 #chatList {
@@ -1842,7 +1874,8 @@ leaderName {
 #menuWindow {
     background: var(--bg) !important;
     border-left: 10px solid var(--accent);
-    border-right: 10px solid var(--accent)
+    border-right: 10px solid var(--accent);
+    border-radius: 0
 }
 
 #settingsTabLayout,
@@ -2529,4 +2562,287 @@ a > [style="color:#353535"] {
     content: url(https://media.tenor.com/Nt17bFLryGYAAAAj/love-cat.gif);
     bottom: -10px; right: 110%;
     filter: brightness(1.4)
+}
+
+/* #endMidHolder,
+#endUI {
+    display: block !important
+} */
+
+
+
+
+
+#matchVoteHolder {
+    left: unset; right: 10px;
+    top: 240px; transform: none;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    min-width: unset
+}
+
+.matchVote {
+    background: var(--bg);
+    text-shadow: none;
+    border: 5px solid var(--bg) !important;
+    border-left: 5px solid var(--accent) !important;
+    border-right: 5px solid var(--accent) !important;
+    border-radius: 0;
+    box-shadow: none !important
+}
+
+.matchVote * {
+    font-size: 20px
+}
+
+.matchVoteMode {
+    font-size: 15px;
+    color: white
+}
+
+.matchVoteTotal,
+.matchVoteMap {
+    color: var(--accent) !important
+}
+
+.matchVoteThumb {
+    opacity: .5 !important
+}
+
+.matchVoteModifier {
+    border-radius: 0;
+    background: var(--accent) !important;
+    color: var(--bg) !important
+}
+
+#endMidHolder {
+    top: 240px !important
+}
+
+#endTimer {
+    text-shadow: none;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 5px 20px;
+    background: var(--bg);
+    color: var(--accent);
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent)
+}
+
+.teamTotals {
+    margin: 0 !important;
+    border-radius: 0;
+    background: none
+}
+
+.teamTotals * {
+    font-size: 25px
+}
+
+.teamTotalN0,
+.teamTotalN1 {
+    color: var(--accent)
+}
+
+#teamTotal0,
+#teamTotal1 { 
+    position: relative;
+    background: none
+}
+
+#teamTotal0::before {
+    content: "";
+    background: var(--bg);
+    z-index: -1;
+    position: absolute;
+    width: 110%; height: 100%;
+    top: 0; left: -2.5%;
+    border-left: 5px solid #5699eb
+}
+
+#teamTotal1::after {
+    content: "";
+    background: var(--bg);
+    z-index: -1;
+    position: absolute;
+    width: 110%; height: 100%;
+    top: 0; right: -2.5%;
+    border-right: 5px solid #eb5656
+}
+
+.endCard {
+    border-radius: 0;
+    background: var(--bg);
+    border-left: 10px solid var(--accent);
+    border-right: 10px solid var(--accent)
+}
+
+#endTable {
+    background: none;
+    border-radius: 0
+}
+
+#tabHolder {
+    background: none;
+    border-radius: 0;
+    font-size: 25px
+}
+
+.tabHeader:hover,
+.tabHeader.selected {
+    border-bottom: 5px solid var(--accent);
+    color: var(--accent)
+}
+
+.teamTotals .material-icons {
+    color: var(--accent) !important
+}
+
+.endTableN {
+    color: rgb(255 255 255 / .6) !important;
+    font-size: 25px 
+}
+
+.endTableN:hover {
+    color: white !important
+}
+
+.endTableN[style*="#fff"] {
+    color: var(--accent) !important
+}
+
+.endTableN[style*="#eb5656"] {
+    color: white !important
+}
+
+#endTable span[style="color:#F8C55C"] {
+    color: var(--accent) !important
+}
+
+#endBPUnlock,
+#doubleXPHolder,
+#doubleXPHolder:hover {
+    border-radius: 0;
+    background: var(--bg);
+    border: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent)
+}
+
+#endBPUnlock,
+#returnText {
+    color: var(--accent)
+}
+
+.endSection {
+    background: none
+}
+
+.endTitle {
+    color: var(--accent);
+    font-size: 25px
+}
+
+#endBPProgText,
+#endBPLvl {
+    font-size: 25px;
+    color: white
+}
+
+.xpEndBar {
+    background: none;
+    border-radius: 0;
+    border: 3px solid var(--accent)
+}
+
+.xpEndBPBarB {
+    background: var(--accent)
+}
+
+#kdLayout,
+.crStat,
+.gfSection {
+    background: none;
+    border: 0;
+    border-left: 3px solid var(--accent);
+    border-right: 3px solid var(--accent);
+    border-radius: 0
+}
+
+.fundsVal {
+    color: white
+}
+
+.fundsVal > span {
+    color: var(--accent) !important
+}
+
+.crLabel {
+    font-size: 25px;
+    color: var(--accent)
+}
+
+.xpLvl {
+    color: white 
+}
+
+.endSection > #lvlLayout .xpEndBarB {
+    background: var(--accent) !important
+}
+
+.endSection > #lvlLayout .xpEndBarB:first-child {
+    margin-right: 10px
+}
+
+.xpEndBarV {
+    text-shadow: none;
+    font-size: 18px
+}
+
+#medalTable {
+    background: none
+}
+
+.medalTxt:nth-child(2) {
+    font-size: 15px;
+    color: var(--accent)
+}
+
+.medalTxt:nth-child(3) {
+    font-size: 25px
+}
+
+#rewardTable {
+    background: none
+}
+
+#rewardTable * {
+    background: none;
+    border-radius: 0;
+    border-width: 3px !important;
+    font-size: 18px
+}
+
+.tabBody > [style*="font-size:30px;background-color:rgba(0, 0, 0, 0.4)"] {
+    background: none !important;
+    color: var(--accent) !important
+}
+
+#endUI::after {
+    content: url(https://media.tenor.com/iJQeS9kcxfQAAAAj/tkthao219-ami.gif);
+    position: absolute;
+    transform: scale(1.75) translate(-40px, -35px);
+    bottom: 0; right: 0
+}
+
+.endChalCard {
+    border-radius: 0;
+    background: var(--bg);
+    border: 0;
+    border-left: 5px solid var(--accent);
+    border-right: 5px solid var(--accent)
 }
