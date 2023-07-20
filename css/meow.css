@@ -2710,6 +2710,10 @@
       border-radius: 0
   }
   
+  #endTable td {
+      color: white 
+  }
+  
   #tabHolder {
       background: none;
       border-radius: 0;
@@ -3114,4 +3118,14 @@
       text-shadow: none
   }
   
+  #interactMsg {
+      border-radius: 0;
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      border-right: 3px solid var(--accent);
+      color: white
+  }
   
+  #interactMsg > span[style="color:#FBC02D"] {
+      color: var(--accent) !important
+  }
