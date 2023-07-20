@@ -898,9 +898,17 @@
       margin: 0 10px
   }
   
+  #chatHolder {
+      bottom: 0; left: 35px
+  }
+  
   #uiBase.onMenu #chatHolder {
       bottom: 0; left: calc(130px + 4.5em);
       max-width: 413px
+  }
+  
+  #uiBase.onCompMenu #chatHolder {
+      bottom: 125px; left: 35px
   }
   
   #chatInputHolder {
@@ -2573,6 +2581,10 @@
       z-index: 1
   }
   
+  #uiBase.onCompMenu::before {
+      top: 180px
+  }
+  
   #bottomLeftHealth::after {
       position: absolute;
       content: url(https://media.tenor.com/Nt17bFLryGYAAAAj/love-cat.gif);
@@ -3128,4 +3140,272 @@
   
   #interactMsg > span[style="color:#FBC02D"] {
       color: var(--accent) !important
+  }
+  
+  .challMapCrd,
+  .challHeadrI {
+      border-radius: 0;
+      border: 3px solid var(--accent)
+  }
+  
+  .challHeadrI * {
+      border-radius: 0
+  }
+  
+  .challHeadrI + [style*="margin-top:10px"] * {
+      border-radius: 0 
+  }
+  
+  #spinTHold {
+      top: 0; left: 0
+  }
+  
+  #spinKR {
+      background: var(--bg);
+      border-radius: 0;
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent);
+      color: var(--accent)
+  }
+  
+  #spinKR > span {
+      color: white !important
+  }
+  
+  .spinPrevIcon {
+      border-radius: 0;
+      border-width: 5px
+  }
+  
+  #spinInfo {
+      top: 0; right: 0;
+      background: var(--bg);
+      border-radius: 0;
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent)
+  }
+  
+  #spinInfo > [style*="50px"] {
+      color: var(--accent) !important;
+      text-align: center
+  }
+  
+  #spinInfo > [style*="5px"] > [style*="rgba(255,255,255,0.5)"] {
+      color: var(--accent) !important
+  }
+  
+  #spinHistoryBtn {
+      border-radius: 0;
+      background: var(--bg) !important;
+      box-shadow: none !important;
+      border: 0;
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent);
+      width: 100%;
+      margin-left: -25px;
+      color: var(--accent)
+  }
+  
+  #spinHistoryBtn:hover {
+      transform: none;
+      border: 0 !important;
+      border-left: 5px solid var(--accent) !important;
+      border-right: 5px solid var(--accent) !important;
+      color: var(--accent) !important
+  }
+  
+  #compBtnLst,
+  #compClassPHolder {
+      background: var(--bg);
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent);
+      width: calc(100% - 10px)
+  }
+  
+  .compClassPItm {
+      background: none;
+      border-radius: 0;
+      border: 0;
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent);
+  }
+  
+  .compClassPItm:hover {
+      transform: none
+  }
+  
+  .cmpClassLck .material-icons {
+      color: var(--accent) !important
+  }
+  
+  #compTScrsB {
+      top: 125px
+  }
+  
+  .compTScrB {
+      background: none;
+      text-shadow: none;
+      color: var(--accent) !important;
+      clip-path: none !important;
+      position: relative
+  }
+  
+  #compT1Scr::before,
+  #compT2Scr::after {
+      content: "";
+      background: var(--bg);
+      z-index: -1;
+      position: absolute;
+      width: 120%; height: 100%;
+      bottom: 0; left: -2.5%;
+      transform: skewX(22deg);
+      border-left: 10px solid #eb4034
+  }
+  
+  #compT2Scr::after {
+      left: unset; right: -2.5%;
+      transform: skewX(-22deg);
+      border-left: 0;
+      border-right: 10px solid #3489eb
+  }
+  
+  .compTScrB[style*="rgba(0,0,0,.8)"] {
+      background: var(--bg) !important;
+      z-index: 1;
+      border-left: 3px solid var(--accent);
+      border-right: 3px solid var(--accent)
+  }
+  
+  #compTimBox {
+      color: var(--accent)
+  }
+  
+  #cmpDatBox {
+      border-left: 30px solid var(--accent);
+      color: var(--accent)
+  }
+  
+  #cmpDatSub {
+      color: var(--accent)
+  }
+  
+  #cmpDatSub > span {
+      color: white !important
+  }
+  
+  .compMenBtnS {
+      border-radius: 0;
+      border: 0;
+      background: none !important;
+      border-left: 3px solid var(--accent);
+      border-right: 3px solid var(--accent)
+  }
+  
+  .compMenBtnS:hover {
+      transform: none
+  }
+  
+  .compMenBtnS > .material-icons {
+      color: white !important
+  }
+  
+  .cmpTmHed {
+      text-shadow: none;
+      color: var(--accent);
+      position: relative;
+      padding: 0 25px
+  }
+  
+  .cmpTmHed::before {
+      content: "";
+      background: var(--bg);
+      position: absolute;
+      width: 200px; height: 100%;
+      left: 0; bottom: 0;
+      z-index: -1;
+      border-left: 5px solid var(--accent);
+      border-right: 5px solid var(--accent)
+  }
+  
+  #compPlListR > .cmpTmHed::before {
+      left: unset; right: 0
+  }
+  
+  .compPLstIcn {
+      background: none;
+      border-radius: 0;
+      border: 3px solid var(--accent)
+  }
+  
+  .compPLstSt {
+      color: var(--accent)
+  }
+  
+  .compPLstSt > .compPLstCl {
+      color: white !important
+  }
+  
+  .compSwpTmB {
+      border-radius: 0;
+      border: 5px solid var(--accent);
+      color: var(--accent);
+      background: var(--bg) !important
+  }
+  
+  .compSwpTmB:hover {
+      transform: none
+  }
+  
+  .compClassPCnt {
+      color: var(--accent);
+      text-shadow: none;
+      background: var(--bg);
+      padding: 0 10px;
+      right: 0; bottom: 0
+  }
+  
+  .compPlWpIcn {
+      border: 0;
+      background: none;
+      filter: brightness(0)
+              drop-shadow(-2px 0px 1px var(--accent)) 
+              drop-shadow(2px 0px 1px var(--accent))
+  }
+  
+  #instructionsUpdate {
+      background: var(--bg);
+      box-shadow: none;
+      border-radius: 0;
+      border-left: 10px solid var(--accent);
+      border-right: 10px solid var(--accent)
+  }
+  
+  .instructionsHeader {
+      background: none;
+      border-bottom: 5px solid var(--accent);
+      box-shadow: none;
+      color: var(--accent)
+  }
+  
+  .reportDC {
+      border-radius: 0;
+      background: none !important;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      border-right: 3px solid var(--accent) 
+  }
+  
+  #instructionsUpdate > *:not(:first-child) {
+      color: white !important
+  }
+  
+  .instructionsTabs {
+      background: none;
+      box-shadow: none;
+      border-top: 5px solid var(--accent)
+  }
+  
+  .instructionsTab {
+      border-top: 0;
+      color: var(--accent)
   }
