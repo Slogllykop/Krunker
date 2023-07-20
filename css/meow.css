@@ -3133,6 +3133,7 @@
   #interactMsg {
       border-radius: 0;
       background: var(--bg);
+      border: 0;
       border-left: 3px solid var(--accent);
       border-right: 3px solid var(--accent);
       color: white
